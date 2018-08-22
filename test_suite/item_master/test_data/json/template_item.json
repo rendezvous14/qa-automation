@@ -1,0 +1,28 @@
+{
+    "action": "VAR_ACTION", 
+    "partnerItemId":"VAR_PARTNER_ITEM_ID",
+    "description":"VAR_DESCRIPTION",
+    "prices": [
+        {
+            "price": VAR_PRICE,
+            "preferred": VAR_PREFERRED,
+            "supplierKey": "VAR_SUPPLIER_KEY",
+            "supplierCode": "VAR_SUPPLIER_CODE"
+        }
+    ],
+    "upcCode":["VAR_UPC_CODE"],
+    "height":VAR_HEIGHT,
+    "length":VAR_LENGTH,
+    "weight":VAR_WEIGHT,
+    "width":VAR_WIDTH,
+    "standardExpiryTime":"VAR_STANDARD_EXPIRY_TIME",
+    "storageRequirement":"VAR_STORAGE_REQUIREMENT",
+    "fulfillmentPattern":"VAR_FULFILLMENT_PATTERN",
+    "isSerialTracked": VAR_IS_SERIAL_TRACKED,
+    "isBatchTracked" :VAR_IS_BATCH_TRACKED,
+    "qcInformation":"VAR_QC",
+    "uom": "VAR_UOM",
+    "itemGroup":"VAR_ITEM_GROUP",
+    "retailSellingPrice":VAR_RSP,    
+    "active": VAR_ACTIVE
+}

@@ -1,0 +1,44 @@
+<message>
+    <control>
+        <message-id>4088efe8-77a9-4580-a68a-e46cef6c88af</message-id>
+    </control>
+    <body>
+        <goodsReceipt>
+            <Receipts>
+                <Receipt>
+                    <DateTimeStamp>VAR_CURRENT_DATE</DateTimeStamp>
+                    <ReceiptId>VAR_RECEIPT_ID</ReceiptId>
+                    <ReceiptIdType>PO</ReceiptIdType>
+                    <Company>a11-3681</Company>
+                    <Warehouse>TH-ACOM-RM3</Warehouse>
+                    <ReceiptDate>VAR_RECEIPT_DATE</ReceiptDate>
+                    <ReceiptDetails>
+                        <ReceiptDetail>
+                            <ErpOrderLineNum>1.00000</ErpOrderLineNum>
+                            <PurchaseOrderLineNum>1.00000</PurchaseOrderLineNum>
+                            <PurchaseOrderId>VAR_PO_ID_KEY</PurchaseOrderId>
+                            <SKU>
+                                <Item>VAR_ITEM_KEY</Item>
+                            </SKU>
+                            <OpenQty>VAR_OPEN_QTY</OpenQty>
+                            <ReceiptContainers>
+                                <ReceiptContainer>
+                                    <ExpDate>VAR_EXPIRE_DATE</ExpDate>
+                                    <Lot>VAR_LOT_1</Lot>
+                                    <Qty>VAR_QTY_1</Qty>
+                                    <SerialNumbers />
+                                </ReceiptContainer>
+                                <ReceiptContainer>
+                                    <ExpDate>VAR_EXPIRE_DATE</ExpDate>
+                                    <Lot>VAR_LOT_2</Lot>
+                                    <Qty>VAR_QTY_2</Qty>
+                                    <SerialNumbers />
+                                </ReceiptContainer>
+                            </ReceiptContainers>
+                        </ReceiptDetail>
+                    </ReceiptDetails>
+                </Receipt>
+            </Receipts>
+        </goodsReceipt>
+    </body>
+</message>

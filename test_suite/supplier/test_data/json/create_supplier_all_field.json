@@ -1,0 +1,21 @@
+{
+    "action": "VAR_ACTION",
+    "website": "VAR_WEBSITE",
+    "supplierAddress":{
+        "addressee" : "VAR_ADDRESSEE",
+        "address1" : "VAR_ADDRESS1",
+        "address2" : "VAR_ADDRESS2",
+        "email": "VAR_EMAIL",
+        "district" : "VAR_DISTRICT",
+        "subDistrict" :"VAR_SUB_DISTRICT",
+        "city": "VAR_CITY",
+        "province" : "VAR_PROVINCE",
+        "postalCode": "VAR_POSTAL_CODE",
+        "phone": "VAR_PHONE",
+        "country": "VAR_COUNTRY"
+    },
+    "currency": "VAR_CURRENCY",
+    "defaultSupplier": VAR_DEFAULT,
+    "initiate": VAR_INITIATE,
+    "contactName": "VAR_CONTACT"
+ }

@@ -1,0 +1,22 @@
+<message>
+  <control>
+    <message-id>4fe6c808-3627-4954-bdbe-089de19dd388</message-id>
+  </control>
+  <body>
+    <availableAdjust>
+      <DateTimeStamp>VAR_CURRENT_DATE</DateTimeStamp>
+      <Warehouse>VAR_WAREHOUSE</Warehouse>
+      <Company>VAR_COMPANY</Company>
+      <Item>VAR_ITEM_KEY</Item>
+      <Quantity>VAY_QTY</Quantity>
+      <ReferenceType>Location Transfer</ReferenceType>
+      <FromLocZone>VAR_FROM_LOCATION_ZONE</FromLocZone>
+      <ToLocZone>VAR_TO_LOCATION_ZONE</ToLocZone>
+      <SerialNumbers>
+        <SerialNumber>VAR_SN</SerialNumber>
+      </SerialNumbers>
+      <Lot>VAR_LOT_ID</Lot>
+      <UserName>Automation</UserName>
+    </availableAdjust>
+  </body>
+</message>

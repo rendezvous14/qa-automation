@@ -1,0 +1,2 @@
+supplierName,contactName,addressee,address1,address2,subDistrict,district,city,province,postalCode,country,phone,email,currency,website,defaultSupplier
+VAR_SUPPLIER_NAME,VAR_CONTACT_NAME,addressee,address1,address2,subDistrict,district,city,Bangkok,10260,TH,123456789,email@acommerce.asia,THB,www.website.com,false

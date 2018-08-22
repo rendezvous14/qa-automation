@@ -1,0 +1,28 @@
+{
+    "action": "create",
+    "partnerItemId":"VAR_PARTNER_ITEM_ID",
+    "description":"Beehive QA automation",
+    "prices": [
+        {
+            "supplierKey": "VAR_SUPPLIER_KEY",
+            "supplierCode": "VAR_SUPPLIER_CODE",
+            "price": 100.25,
+            "preferred": true
+        }
+    ],
+    "upcCode":["VAR_UPC_CODE"],
+    "height":3.50005,
+    "length":5.60005,
+    "weight":4.70005,
+    "width":7.80005,
+    "standardExpiryTime":"VAR_STANDARD_EXPIRY_TIME",
+    "storageRequirement":"VAR_STORAGE_REQUIREMENT",
+    "fulfillmentPattern":"VAR_FULFILLMENT_PATTERN",
+    "isSerialTracked": VAR_IS_SERIAL_TRACKED,
+    "isBatchTracked" :VAR_IS_BATCH_TRACKED,
+    "isGDPMDS" :VAR_IS_GDPMDS,
+    "qcInformation": 0.0,
+    "uom": "EA",
+    "retailSellingPrice": 10000.00,
+    "active": true
+}

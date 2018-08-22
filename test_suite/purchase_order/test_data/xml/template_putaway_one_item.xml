@@ -1,0 +1,35 @@
+<message>
+    <control>
+        <message-id>c78901d8-a894-419f-913f-c30dcee1b2aa</message-id>
+    </control>
+    <body>
+        <putawayComplete>
+            <Receipts>
+                <Receipt>
+                    <DateTimeStamp>VAR_CURRENT_DATE</DateTimeStamp>
+                    <ReceiptId>VAR_RECEIPT_ID</ReceiptId>
+                    <ReceiptIdType>PO</ReceiptIdType>
+                    <Company>VAR_COMPANY</Company>
+                    <Warehouse>VAR_WAREHOUSE</Warehouse>
+                    <ReceiptDate>VAR_RECEIPT_DATE</ReceiptDate>
+                    <ReceiptContainers>
+                        <ReceiptContainer>
+                            <ExpDate>VAR_EXPIRE_DATE</ExpDate>
+                            <Lot>VAR_LOT</Lot>
+                            <Qty>VAR_QTY</Qty>
+                            <ToLocationWorkZone>VAR_TO_LOCATION_WORKZONE</ToLocationWorkZone>
+                            <ReceiptDetail>
+                                <ErpOrderLineNum>VAR_LINE_NO</ErpOrderLineNum>
+                                <PurchaseOrderLineNum>VAR_LINE_NO</PurchaseOrderLineNum>
+                                <PurchaseOrderId>VAR_PO_ID_KEY</PurchaseOrderId>
+                                <SKU>
+                                    <Item>VAR_ITEM_KEY</Item>
+                                </SKU>
+                            </ReceiptDetail>
+                        </ReceiptContainer>
+                    </ReceiptContainers>
+                </Receipt>
+            </Receipts>
+        </putawayComplete>
+    </body>
+</message>

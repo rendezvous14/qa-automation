@@ -1,0 +1,22 @@
+{
+    "action": "VAR_ACTION",  
+    "createDate": "VAR_CREATE_DATE", 
+    "expectedReceiveDate": "VAR_EXPECTED_RECEIVE_DATE", 
+    "importedBy": "VAR_IMPORTED_BY", 
+    "items": [
+        {
+            "description": "VAR_ITEM_DESC_1", 
+            "lineNumber": VAR_ITEM_LINE_NO_1, 
+            "partnerItemId": "VAR_ITEM_PARTNER_ITEM_ID_1", 
+            "qty": VAR_ITEM_QTY_1, 
+            "supplierCode": "VAR_ITEM_SUPPLIER_CODE_1", 
+            "taxRate": "VAR_ITEM_TAX_RATE_1", 
+            "unitPrice": VAR_ITEM_UNIT_PRICE_1
+        }
+    ], 
+    "partnerPurchaseOrderId": "VAR_PARTNER_PO_ID", 
+    "purchaseOrderDate": "VAR_PO_DATE", 
+    "supplierName": "VAR_SUPPLIER_NAME", 
+    "taxRate": VAR_TAX_RATE, 
+    "warehouseCode": "VAR_WH_CODE"
+}

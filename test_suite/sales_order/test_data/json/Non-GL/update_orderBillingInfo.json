@@ -1,0 +1,15 @@
+{
+    "orderBillingInfo":{
+      "addressee": "VAR_ORDER_BILLING_INFO_ADDRESSEE",
+      "address1": "VAR_ORDER_BILLING_INFO_ADDRESS1",
+      "address2": "VAR_ORDER_BILLING_INFO_ADDRESS2",
+      "subDistrict": "VAR_ORDER_BILLING_INFO_SUBDISTICT",
+      "district": "VAR_ORDER_BILLING_INFO_DISTICT",
+      "city": "VAR_ORDER_BILLING_INFO_CITY",
+      "province": "VAR_ORDER_BILLING_INFO_PROVINCE",
+      "postalCode": "VAR_ORDER_BILLING_INFO_POSTALCODE",
+      "country": "VAR_ORDER_BILLING_INFO_COUNTRY",
+      "phone": "VAR_ORDER_BILLING_INFO_PHONE",
+      "email": "VAR_ORDER_BILLING_INFO_EMAIL"
+   }
+}

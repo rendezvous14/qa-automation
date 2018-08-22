@@ -1,0 +1,1948 @@
+==============================================================================
+20180426 18:30:21.229 - INFO - + START SUITE: Shoot So [ ]
+==============================================================================
+20180426 18:30:21.229 - INFO - +- START TEST: Gen SO [ ]
+------------------------------------------------------------------------------
+20180426 18:30:21.234 - INFO - +-- START KW: SO tmp [ ]
+20180426 18:30:21.235 - INFO - +--- START KW: OperatingSystem.Get File [ ${template_file} ]
+20180426 18:30:21.236 - INFO - Getting file '<a href="file:///Users/nattapol/bh-qa-automation/playground/sales_order_template.json">/Users/nattapol/bh-qa-automation/playground/sales_order_template.json</a>'.
+20180426 18:30:21.237 - INFO - ${request_body} = {
+  "partnerShippingType": "VAR_PARTNER_SHIPPING_TYPE",
+  "partnerPaymentType": "VAR_PARTNER_PAYMENT_TYPE",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceD...
+20180426 18:30:21.237 - INFO - +--- END KW: OperatingSystem.Get File (2)
+20180426 18:30:21.238 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_PARTNER_SHIPPING_TYPE | STANDARD_2_4_DAYS ]
+20180426 18:30:21.239 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "VAR_PARTNER_PAYMENT_TYPE",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "V...
+20180426 18:30:21.239 - INFO - +--- END KW: String.Replace String (1)
+20180426 18:30:21.240 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_PARTNER_PAYMENT_TYPE | CCOD ]
+20180426 18:30:21.240 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.242 - INFO - +--- END KW: String.Replace String (1)
+20180426 18:30:21.242 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_LINE_NUMBER | 1 ]
+20180426 18:30:21.244 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.244 - INFO - +--- END KW: String.Replace String (2)
+20180426 18:30:21.244 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_PARTNER_ID | ${partnerId} ]
+20180426 18:30:21.245 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.245 - INFO - +--- END KW: String.Replace String (1)
+20180426 18:30:21.245 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_PRODUCT_ID | ${partnerItemId} ]
+20180426 18:30:21.246 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.246 - INFO - +--- END KW: String.Replace String (1)
+20180426 18:30:21.246 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_PRODUCT_TITLE | ${partnerItemId} ]
+20180426 18:30:21.248 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.248 - INFO - +--- END KW: String.Replace String (2)
+20180426 18:30:21.248 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_PRODUCT_QTY | 1 ]
+20180426 18:30:21.250 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.250 - INFO - +--- END KW: String.Replace String (2)
+20180426 18:30:21.251 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_PARTNER_ITEM_ID | ${partnerItemId} ]
+20180426 18:30:21.252 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.252 - INFO - +--- END KW: String.Replace String (1)
+20180426 18:30:21.252 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_ITEM_QTY | 1 ]
+20180426 18:30:21.254 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.254 - INFO - +--- END KW: String.Replace String (2)
+20180426 18:30:21.254 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_SUB_TOTAL | 100.00 ]
+20180426 18:30:21.255 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.256 - INFO - +--- END KW: String.Replace String (2)
+20180426 18:30:21.256 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_GROSS_TOTAL | 400 ]
+20180426 18:30:21.259 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.260 - INFO - +--- END KW: String.Replace String (4)
+20180426 18:30:21.261 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_GROSS_AMOUNT | 400 ]
+20180426 18:30:21.262 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.262 - INFO - +--- END KW: String.Replace String (1)
+20180426 18:30:21.263 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_COLLECTION_AMOUNT | 500 ]
+20180426 18:30:21.263 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.264 - INFO - +--- END KW: String.Replace String (0)
+20180426 18:30:21.264 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_INSURANCE_DECLARED_VALUE | 600 ]
+20180426 18:30:21.264 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.265 - INFO - +--- END KW: String.Replace String (1)
+20180426 18:30:21.265 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_CURRENCY_UNIT | THB ]
+20180426 18:30:21.267 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.268 - INFO - +--- END KW: String.Replace String (3)
+20180426 18:30:21.268 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_ORDER_NOTE | Beehive QA Testing ]
+20180426 18:30:21.270 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.270 - INFO - +--- END KW: String.Replace String (2)
+20180426 18:30:21.270 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_SHIPPING_NOTE | Beehive QA Testing ]
+20180426 18:30:21.270 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.271 - INFO - +--- END KW: String.Replace String (0)
+20180426 18:30:21.271 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_SALE_SUB_CH_NAME | ALIBABA ]
+20180426 18:30:21.272 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.272 - INFO - +--- END KW: String.Replace String (1)
+20180426 18:30:21.273 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_SALE_CH_TYPE | e-Marketplace ]
+20180426 18:30:21.274 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.274 - INFO - +--- END KW: String.Replace String (2)
+20180426 18:30:21.275 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_SALE_CH_ID | ALI ]
+20180426 18:30:21.275 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.275 - INFO - +--- END KW: String.Replace String (0)
+20180426 18:30:21.276 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_CUSTOMER_TAX_ID | ALI_TAX_0001 ]
+20180426 18:30:21.276 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.276 - INFO - +--- END KW: String.Replace String (0)
+20180426 18:30:21.277 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_CUSTOMER_TAX_TYPE | ALI_TAX_TYPE ]
+20180426 18:30:21.277 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.277 - INFO - +--- END KW: String.Replace String (0)
+20180426 18:30:21.278 - INFO - +--- START KW: String.Replace String [ ${request_body} | VAR_CUSTOMER_BRANCH_CODE | ALI_BRANCH_0001 ]
+20180426 18:30:21.278 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.279 - INFO - +--- END KW: String.Replace String (1)
+20180426 18:30:21.279 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  ...
+20180426 18:30:21.280 - INFO - +-- END KW: SO tmp (47)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180426 18:30:21.280 - INFO - +-- START KW: ${INDEX} IN RANGE [ 1 | ${loop_no}+1 ] [ ]
+20180426 18:30:21.281 - INFO - +--- START KW: ${INDEX} = 1 [ ]
+20180426 18:30:21.281 - INFO - +---- START KW: BuiltIn.Log To Console [ ${INDEX}/${loop_no} ]
+20180426 18:30:21.282 - INFO - +---- END KW: BuiltIn.Log To Console (1)
+20180426 18:30:21.282 - INFO - +---- START KW: DateTime.Get Current Date [ ]
+20180426 18:30:21.283 - INFO - ${current_date} = 2018-04-26 18:30:21.282
+20180426 18:30:21.283 - INFO - +---- END KW: DateTime.Get Current Date (1)
+20180426 18:30:21.284 - INFO - +---- START KW: DateTime.Convert Date [ ${current_date} | result_format=%Y%m%d%H%M%S%f ]
+20180426 18:30:21.291 - INFO - ${random_id} = 20180426183021282000
+20180426 18:30:21.292 - INFO - +---- END KW: DateTime.Convert Date (7)
+20180426 18:30:21.292 - INFO - +---- START KW: BuiltIn.Set Variable [ so_${partnerId}_${random_id} ]
+20180426 18:30:21.294 - INFO - ${externalSalesOrderId} = so_3995_20180426183021282000
+20180426 18:30:21.294 - INFO - +---- END KW: BuiltIn.Set Variable (2)
+20180426 18:30:21.294 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_EXT_SO_ID | ${externalSalesOrderId} ]
+20180426 18:30:21.296 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183021282000",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_IN...
+20180426 18:30:21.297 - INFO - +---- END KW: String.Replace String (3)
+20180426 18:30:21.297 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_ORDER_DATE | ${current_date} ]
+20180426 18:30:21.297 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183021282000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:21.297 - INFO - +---- END KW: String.Replace String (0)
+20180426 18:30:21.298 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_INVOICE_DATE | ${current_date} ]
+20180426 18:30:21.298 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183021282000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:21.298 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:21.299 - INFO - +---- START KW: Create Sales Order via API [ ${request_body} ]
+20180426 18:30:21.299 - INFO - +----- START KW: HttpLibrary.HTTP.Create Http Context [ ${endpoint_orderstore} | http ]
+20180426 18:30:21.300 - INFO - Host for next HTTP request set to 'order-store-staging.acommercedev.service'
+20180426 18:30:21.300 - INFO - Scheme for next HTTP request set to 'http'
+20180426 18:30:21.300 - INFO - +----- END KW: HttpLibrary.HTTP.Create Http Context (1)
+20180426 18:30:21.300 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ Content-Type | application/json ]
+20180426 18:30:21.300 - INFO - Set request header "Content-Type" to "application/json"
+20180426 18:30:21.300 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (0)
+20180426 18:30:21.300 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-roles | bo_${partnerId} ]
+20180426 18:30:21.301 - INFO - Set request header "X-roles" to "bo_3995"
+20180426 18:30:21.301 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:21.301 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-User-Name | bh_automation ]
+20180426 18:30:21.302 - INFO - Set request header "X-User-Name" to "bh_automation"
+20180426 18:30:21.303 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:21.303 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Body [ ${request_body} ]
+20180426 18:30:21.304 - INFO - Request body set to "{
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183021282000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ชั้น 33 ถนนสุขุมวิท",
+    "subDistrict": "แขวงคลองตันเหนือ",
+    "district": "เขตวัฒนา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพ",
+    "postalCode": "111111",
+    "country": "ไทย / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "222222",
+    "country": "ไทย / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "333333",
+    "country": "ไทย / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+".
+20180426 18:30:21.304 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Body (1)
+20180426 18:30:21.305 - INFO - +----- START KW: HttpLibrary.HTTP.Next Request May Not Succeed [ ]
+20180426 18:30:21.306 - INFO - +----- END KW: HttpLibrary.HTTP.Next Request May Not Succeed (2)
+20180426 18:30:21.306 - INFO - +----- START KW: HttpLibrary.HTTP.POST [ ${order_store_path} ]
+20180426 18:30:21.307 - DEBUG - Performing POST request on http://order-store-staging.acommercedev.service/os/item-sales-orders/
+20180426 18:30:21.308 - DEBUG - Request headers:
+20180426 18:30:21.308 - DEBUG - Host: order-store-staging.acommercedev.service
+20180426 18:30:21.308 - DEBUG - X-User-Name: bh_automation
+20180426 18:30:21.308 - DEBUG - Content-Type: application/json
+20180426 18:30:21.308 - DEBUG - X-roles: bo_3995
+20180426 18:30:21.308 - DEBUG - Request body:
+20180426 18:30:21.311 - DEBUG - {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183021282000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8a\xe0\xb8\xb1\xe0\xb9\x89\xe0\xb8\x99 33 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xaa\xe0\xb8\xb8\xe0\xb8\x82\xe0\xb8\xb8\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb4\xe0\xb8\x97",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\x95\xe0\xb8\xb1\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\xab\xe0\xb8\x99\xe0\xb8\xb7\xe0\xb8\xad",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\xa7\xe0\xb8\xb1\xe0\xb8\x92\xe0\xb8\x99\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e",
+    "postalCode": "111111",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "222222",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "333333",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+20180426 18:30:21.995 - DEBUG - Response status line: 201 Created
+20180426 18:30:21.995 - DEBUG - Response headers:
+20180426 18:30:21.995 - DEBUG - transfer-encoding: chunked
+20180426 18:30:21.996 - DEBUG - vary: Accept
+20180426 18:30:21.996 - DEBUG - server: gunicorn/19.6.0
+20180426 18:30:21.996 - DEBUG - connection: keep-alive
+20180426 18:30:21.996 - DEBUG - allow: POST, OPTIONS
+20180426 18:30:21.996 - DEBUG - date: Thu, 26 Apr 2018 11:30:21 GMT
+20180426 18:30:21.996 - DEBUG - x-frame-options: SAMEORIGIN
+20180426 18:30:21.996 - DEBUG - content-type: application/json
+20180426 18:30:21.996 - DEBUG - Response body:
+20180426 18:30:21.996 - DEBUG - {"key":"ONX69OA5Z95F8MGO6P1HWUEOB","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183021282000"}
+20180426 18:30:21.996 - INFO - +----- END KW: HttpLibrary.HTTP.POST (690)
+20180426 18:30:21.997 - INFO - +----- START KW: HttpLibrary.HTTP.Log Response Body [ ]
+20180426 18:30:21.997 - INFO - Response body:
+20180426 18:30:21.997 - INFO - {"key":"ONX69OA5Z95F8MGO6P1HWUEOB","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183021282000"}
+20180426 18:30:21.997 - INFO - +----- END KW: HttpLibrary.HTTP.Log Response Body (0)
+20180426 18:30:21.998 - INFO - +----- START KW: HttpLibrary.HTTP.Response Status Code Should Equal [ 201 ]
+20180426 18:30:21.998 - INFO - +----- END KW: HttpLibrary.HTTP.Response Status Code Should Equal (0)
+20180426 18:30:21.998 - INFO - +---- END KW: Create Sales Order via API (699)
+20180426 18:30:21.999 - INFO - +---- START KW: String.Replace String [ ${request_body} | ${externalSalesOrderId} | VAR_EXT_SO_ID ]
+20180426 18:30:21.999 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 1...
+20180426 18:30:21.999 - INFO - +---- END KW: String.Replace String (0)
+20180426 18:30:22.000 - INFO - +--- END KW: ${INDEX} = 1 (719)
+20180426 18:30:22.000 - INFO - +--- START KW: ${INDEX} = 2 [ ]
+20180426 18:30:22.000 - INFO - +---- START KW: BuiltIn.Log To Console [ ${INDEX}/${loop_no} ]
+20180426 18:30:22.001 - INFO - +---- END KW: BuiltIn.Log To Console (1)
+20180426 18:30:22.001 - INFO - +---- START KW: DateTime.Get Current Date [ ]
+20180426 18:30:22.002 - INFO - ${current_date} = 2018-04-26 18:30:22.001
+20180426 18:30:22.002 - INFO - +---- END KW: DateTime.Get Current Date (1)
+20180426 18:30:22.002 - INFO - +---- START KW: DateTime.Convert Date [ ${current_date} | result_format=%Y%m%d%H%M%S%f ]
+20180426 18:30:22.003 - INFO - ${random_id} = 20180426183022001000
+20180426 18:30:22.003 - INFO - +---- END KW: DateTime.Convert Date (1)
+20180426 18:30:22.004 - INFO - +---- START KW: BuiltIn.Set Variable [ so_${partnerId}_${random_id} ]
+20180426 18:30:22.004 - INFO - ${externalSalesOrderId} = so_3995_20180426183022001000
+20180426 18:30:22.004 - INFO - +---- END KW: BuiltIn.Set Variable (1)
+20180426 18:30:22.005 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_EXT_SO_ID | ${externalSalesOrderId} ]
+20180426 18:30:22.006 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183022001000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:22.006 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:22.006 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_ORDER_DATE | ${current_date} ]
+20180426 18:30:22.007 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183022001000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:22.007 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:22.008 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_INVOICE_DATE | ${current_date} ]
+20180426 18:30:22.009 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183022001000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:22.009 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:22.010 - INFO - +---- START KW: Create Sales Order via API [ ${request_body} ]
+20180426 18:30:22.011 - INFO - +----- START KW: HttpLibrary.HTTP.Create Http Context [ ${endpoint_orderstore} | http ]
+20180426 18:30:22.011 - INFO - Host for next HTTP request set to 'order-store-staging.acommercedev.service'
+20180426 18:30:22.012 - INFO - Scheme for next HTTP request set to 'http'
+20180426 18:30:22.012 - INFO - +----- END KW: HttpLibrary.HTTP.Create Http Context (1)
+20180426 18:30:22.012 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ Content-Type | application/json ]
+20180426 18:30:22.013 - INFO - Set request header "Content-Type" to "application/json"
+20180426 18:30:22.013 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:22.014 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-roles | bo_${partnerId} ]
+20180426 18:30:22.014 - INFO - Set request header "X-roles" to "bo_3995"
+20180426 18:30:22.015 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:22.015 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-User-Name | bh_automation ]
+20180426 18:30:22.015 - INFO - Set request header "X-User-Name" to "bh_automation"
+20180426 18:30:22.016 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:22.016 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Body [ ${request_body} ]
+20180426 18:30:22.017 - INFO - Request body set to "{
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183022001000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ชั้น 33 ถนนสุขุมวิท",
+    "subDistrict": "แขวงคลองตันเหนือ",
+    "district": "เขตวัฒนา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพ",
+    "postalCode": "111111",
+    "country": "ไทย / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "222222",
+    "country": "ไทย / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "333333",
+    "country": "ไทย / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+".
+20180426 18:30:22.017 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Body (1)
+20180426 18:30:22.018 - INFO - +----- START KW: HttpLibrary.HTTP.Next Request May Not Succeed [ ]
+20180426 18:30:22.019 - INFO - +----- END KW: HttpLibrary.HTTP.Next Request May Not Succeed (1)
+20180426 18:30:22.019 - INFO - +----- START KW: HttpLibrary.HTTP.POST [ ${order_store_path} ]
+20180426 18:30:22.020 - DEBUG - Performing POST request on http://order-store-staging.acommercedev.service/os/item-sales-orders/
+20180426 18:30:22.020 - DEBUG - Request headers:
+20180426 18:30:22.020 - DEBUG - Host: order-store-staging.acommercedev.service
+20180426 18:30:22.021 - DEBUG - X-User-Name: bh_automation
+20180426 18:30:22.021 - DEBUG - Content-Type: application/json
+20180426 18:30:22.021 - DEBUG - X-roles: bo_3995
+20180426 18:30:22.021 - DEBUG - Request body:
+20180426 18:30:22.024 - DEBUG - {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183022001000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8a\xe0\xb8\xb1\xe0\xb9\x89\xe0\xb8\x99 33 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xaa\xe0\xb8\xb8\xe0\xb8\x82\xe0\xb8\xb8\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb4\xe0\xb8\x97",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\x95\xe0\xb8\xb1\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\xab\xe0\xb8\x99\xe0\xb8\xb7\xe0\xb8\xad",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\xa7\xe0\xb8\xb1\xe0\xb8\x92\xe0\xb8\x99\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e",
+    "postalCode": "111111",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "222222",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "333333",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+20180426 18:30:22.575 - DEBUG - Response status line: 201 Created
+20180426 18:30:22.575 - DEBUG - Response headers:
+20180426 18:30:22.575 - DEBUG - transfer-encoding: chunked
+20180426 18:30:22.575 - DEBUG - vary: Accept
+20180426 18:30:22.576 - DEBUG - server: gunicorn/19.6.0
+20180426 18:30:22.576 - DEBUG - connection: keep-alive
+20180426 18:30:22.576 - DEBUG - allow: POST, OPTIONS
+20180426 18:30:22.576 - DEBUG - date: Thu, 26 Apr 2018 11:30:22 GMT
+20180426 18:30:22.576 - DEBUG - x-frame-options: SAMEORIGIN
+20180426 18:30:22.576 - DEBUG - content-type: application/json
+20180426 18:30:22.576 - DEBUG - Response body:
+20180426 18:30:22.576 - DEBUG - {"key":"ZTPRS6L4CBRIWO19DSKNIL6X8","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183022001000"}
+20180426 18:30:22.577 - INFO - +----- END KW: HttpLibrary.HTTP.POST (557)
+20180426 18:30:22.577 - INFO - +----- START KW: HttpLibrary.HTTP.Log Response Body [ ]
+20180426 18:30:22.578 - INFO - Response body:
+20180426 18:30:22.578 - INFO - {"key":"ZTPRS6L4CBRIWO19DSKNIL6X8","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183022001000"}
+20180426 18:30:22.578 - INFO - +----- END KW: HttpLibrary.HTTP.Log Response Body (1)
+20180426 18:30:22.578 - INFO - +----- START KW: HttpLibrary.HTTP.Response Status Code Should Equal [ 201 ]
+20180426 18:30:22.578 - INFO - +----- END KW: HttpLibrary.HTTP.Response Status Code Should Equal (0)
+20180426 18:30:22.579 - INFO - +---- END KW: Create Sales Order via API (569)
+20180426 18:30:22.579 - INFO - +---- START KW: String.Replace String [ ${request_body} | ${externalSalesOrderId} | VAR_EXT_SO_ID ]
+20180426 18:30:22.580 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 1...
+20180426 18:30:22.580 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:22.581 - INFO - +--- END KW: ${INDEX} = 2 (581)
+20180426 18:30:22.581 - INFO - +--- START KW: ${INDEX} = 3 [ ]
+20180426 18:30:22.582 - INFO - +---- START KW: BuiltIn.Log To Console [ ${INDEX}/${loop_no} ]
+20180426 18:30:22.583 - INFO - +---- END KW: BuiltIn.Log To Console (1)
+20180426 18:30:22.584 - INFO - +---- START KW: DateTime.Get Current Date [ ]
+20180426 18:30:22.585 - INFO - ${current_date} = 2018-04-26 18:30:22.584
+20180426 18:30:22.585 - INFO - +---- END KW: DateTime.Get Current Date (1)
+20180426 18:30:22.586 - INFO - +---- START KW: DateTime.Convert Date [ ${current_date} | result_format=%Y%m%d%H%M%S%f ]
+20180426 18:30:22.587 - INFO - ${random_id} = 20180426183022584000
+20180426 18:30:22.588 - INFO - +---- END KW: DateTime.Convert Date (3)
+20180426 18:30:22.589 - INFO - +---- START KW: BuiltIn.Set Variable [ so_${partnerId}_${random_id} ]
+20180426 18:30:22.589 - INFO - ${externalSalesOrderId} = so_3995_20180426183022584000
+20180426 18:30:22.590 - INFO - +---- END KW: BuiltIn.Set Variable (2)
+20180426 18:30:22.590 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_EXT_SO_ID | ${externalSalesOrderId} ]
+20180426 18:30:22.591 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183022584000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:22.591 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:22.592 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_ORDER_DATE | ${current_date} ]
+20180426 18:30:22.592 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183022584000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:22.592 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:22.593 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_INVOICE_DATE | ${current_date} ]
+20180426 18:30:22.593 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183022584000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:22.594 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:22.594 - INFO - +---- START KW: Create Sales Order via API [ ${request_body} ]
+20180426 18:30:22.595 - INFO - +----- START KW: HttpLibrary.HTTP.Create Http Context [ ${endpoint_orderstore} | http ]
+20180426 18:30:22.595 - INFO - Host for next HTTP request set to 'order-store-staging.acommercedev.service'
+20180426 18:30:22.595 - INFO - Scheme for next HTTP request set to 'http'
+20180426 18:30:22.596 - INFO - +----- END KW: HttpLibrary.HTTP.Create Http Context (1)
+20180426 18:30:22.596 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ Content-Type | application/json ]
+20180426 18:30:22.597 - INFO - Set request header "Content-Type" to "application/json"
+20180426 18:30:22.597 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:22.597 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-roles | bo_${partnerId} ]
+20180426 18:30:22.597 - INFO - Set request header "X-roles" to "bo_3995"
+20180426 18:30:22.598 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:22.598 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-User-Name | bh_automation ]
+20180426 18:30:22.598 - INFO - Set request header "X-User-Name" to "bh_automation"
+20180426 18:30:22.598 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (0)
+20180426 18:30:22.599 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Body [ ${request_body} ]
+20180426 18:30:22.599 - INFO - Request body set to "{
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183022584000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ชั้น 33 ถนนสุขุมวิท",
+    "subDistrict": "แขวงคลองตันเหนือ",
+    "district": "เขตวัฒนา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพ",
+    "postalCode": "111111",
+    "country": "ไทย / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "222222",
+    "country": "ไทย / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "333333",
+    "country": "ไทย / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+".
+20180426 18:30:22.599 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Body (0)
+20180426 18:30:22.600 - INFO - +----- START KW: HttpLibrary.HTTP.Next Request May Not Succeed [ ]
+20180426 18:30:22.601 - INFO - +----- END KW: HttpLibrary.HTTP.Next Request May Not Succeed (1)
+20180426 18:30:22.601 - INFO - +----- START KW: HttpLibrary.HTTP.POST [ ${order_store_path} ]
+20180426 18:30:22.602 - DEBUG - Performing POST request on http://order-store-staging.acommercedev.service/os/item-sales-orders/
+20180426 18:30:22.602 - DEBUG - Request headers:
+20180426 18:30:22.602 - DEBUG - Host: order-store-staging.acommercedev.service
+20180426 18:30:22.602 - DEBUG - X-User-Name: bh_automation
+20180426 18:30:22.602 - DEBUG - Content-Type: application/json
+20180426 18:30:22.602 - DEBUG - X-roles: bo_3995
+20180426 18:30:22.602 - DEBUG - Request body:
+20180426 18:30:22.605 - DEBUG - {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183022584000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8a\xe0\xb8\xb1\xe0\xb9\x89\xe0\xb8\x99 33 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xaa\xe0\xb8\xb8\xe0\xb8\x82\xe0\xb8\xb8\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb4\xe0\xb8\x97",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\x95\xe0\xb8\xb1\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\xab\xe0\xb8\x99\xe0\xb8\xb7\xe0\xb8\xad",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\xa7\xe0\xb8\xb1\xe0\xb8\x92\xe0\xb8\x99\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e",
+    "postalCode": "111111",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "222222",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "333333",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+20180426 18:30:24.045 - DEBUG - Response status line: 201 Created
+20180426 18:30:24.045 - DEBUG - Response headers:
+20180426 18:30:24.045 - DEBUG - transfer-encoding: chunked
+20180426 18:30:24.045 - DEBUG - vary: Accept
+20180426 18:30:24.045 - DEBUG - server: gunicorn/19.6.0
+20180426 18:30:24.046 - DEBUG - connection: keep-alive
+20180426 18:30:24.046 - DEBUG - allow: POST, OPTIONS
+20180426 18:30:24.046 - DEBUG - date: Thu, 26 Apr 2018 11:30:23 GMT
+20180426 18:30:24.046 - DEBUG - x-frame-options: SAMEORIGIN
+20180426 18:30:24.046 - DEBUG - content-type: application/json
+20180426 18:30:24.046 - DEBUG - Response body:
+20180426 18:30:24.046 - DEBUG - {"key":"84YAN2GV5GUAF1H6018AWR5R8","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183022584000"}
+20180426 18:30:24.047 - INFO - +----- END KW: HttpLibrary.HTTP.POST (1445)
+20180426 18:30:24.047 - INFO - +----- START KW: HttpLibrary.HTTP.Log Response Body [ ]
+20180426 18:30:24.047 - INFO - Response body:
+20180426 18:30:24.048 - INFO - {"key":"84YAN2GV5GUAF1H6018AWR5R8","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183022584000"}
+20180426 18:30:24.048 - INFO - +----- END KW: HttpLibrary.HTTP.Log Response Body (1)
+20180426 18:30:24.048 - INFO - +----- START KW: HttpLibrary.HTTP.Response Status Code Should Equal [ 201 ]
+20180426 18:30:24.049 - INFO - +----- END KW: HttpLibrary.HTTP.Response Status Code Should Equal (1)
+20180426 18:30:24.049 - INFO - +---- END KW: Create Sales Order via API (1455)
+20180426 18:30:24.049 - INFO - +---- START KW: String.Replace String [ ${request_body} | ${externalSalesOrderId} | VAR_EXT_SO_ID ]
+20180426 18:30:24.050 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 1...
+20180426 18:30:24.050 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:24.050 - INFO - +--- END KW: ${INDEX} = 3 (1469)
+20180426 18:30:24.051 - INFO - +--- START KW: ${INDEX} = 4 [ ]
+20180426 18:30:24.051 - INFO - +---- START KW: BuiltIn.Log To Console [ ${INDEX}/${loop_no} ]
+20180426 18:30:24.052 - INFO - +---- END KW: BuiltIn.Log To Console (0)
+20180426 18:30:24.052 - INFO - +---- START KW: DateTime.Get Current Date [ ]
+20180426 18:30:24.053 - INFO - ${current_date} = 2018-04-26 18:30:24.052
+20180426 18:30:24.053 - INFO - +---- END KW: DateTime.Get Current Date (1)
+20180426 18:30:24.053 - INFO - +---- START KW: DateTime.Convert Date [ ${current_date} | result_format=%Y%m%d%H%M%S%f ]
+20180426 18:30:24.054 - INFO - ${random_id} = 20180426183024052000
+20180426 18:30:24.054 - INFO - +---- END KW: DateTime.Convert Date (1)
+20180426 18:30:24.055 - INFO - +---- START KW: BuiltIn.Set Variable [ so_${partnerId}_${random_id} ]
+20180426 18:30:24.055 - INFO - ${externalSalesOrderId} = so_3995_20180426183024052000
+20180426 18:30:24.056 - INFO - +---- END KW: BuiltIn.Set Variable (1)
+20180426 18:30:24.056 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_EXT_SO_ID | ${externalSalesOrderId} ]
+20180426 18:30:24.057 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183024052000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:24.057 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:24.057 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_ORDER_DATE | ${current_date} ]
+20180426 18:30:24.058 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183024052000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:24.058 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:24.059 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_INVOICE_DATE | ${current_date} ]
+20180426 18:30:24.059 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183024052000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:24.059 - INFO - +---- END KW: String.Replace String (0)
+20180426 18:30:24.060 - INFO - +---- START KW: Create Sales Order via API [ ${request_body} ]
+20180426 18:30:24.060 - INFO - +----- START KW: HttpLibrary.HTTP.Create Http Context [ ${endpoint_orderstore} | http ]
+20180426 18:30:24.061 - INFO - Host for next HTTP request set to 'order-store-staging.acommercedev.service'
+20180426 18:30:24.061 - INFO - Scheme for next HTTP request set to 'http'
+20180426 18:30:24.061 - INFO - +----- END KW: HttpLibrary.HTTP.Create Http Context (1)
+20180426 18:30:24.061 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ Content-Type | application/json ]
+20180426 18:30:24.062 - INFO - Set request header "Content-Type" to "application/json"
+20180426 18:30:24.062 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:24.062 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-roles | bo_${partnerId} ]
+20180426 18:30:24.063 - INFO - Set request header "X-roles" to "bo_3995"
+20180426 18:30:24.063 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:24.063 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-User-Name | bh_automation ]
+20180426 18:30:24.063 - INFO - Set request header "X-User-Name" to "bh_automation"
+20180426 18:30:24.064 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (0)
+20180426 18:30:24.064 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Body [ ${request_body} ]
+20180426 18:30:24.065 - INFO - Request body set to "{
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183024052000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ชั้น 33 ถนนสุขุมวิท",
+    "subDistrict": "แขวงคลองตันเหนือ",
+    "district": "เขตวัฒนา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพ",
+    "postalCode": "111111",
+    "country": "ไทย / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "222222",
+    "country": "ไทย / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "333333",
+    "country": "ไทย / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+".
+20180426 18:30:24.065 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Body (1)
+20180426 18:30:24.066 - INFO - +----- START KW: HttpLibrary.HTTP.Next Request May Not Succeed [ ]
+20180426 18:30:24.066 - INFO - +----- END KW: HttpLibrary.HTTP.Next Request May Not Succeed (0)
+20180426 18:30:24.066 - INFO - +----- START KW: HttpLibrary.HTTP.POST [ ${order_store_path} ]
+20180426 18:30:24.067 - DEBUG - Performing POST request on http://order-store-staging.acommercedev.service/os/item-sales-orders/
+20180426 18:30:24.068 - DEBUG - Request headers:
+20180426 18:30:24.068 - DEBUG - Host: order-store-staging.acommercedev.service
+20180426 18:30:24.069 - DEBUG - X-User-Name: bh_automation
+20180426 18:30:24.069 - DEBUG - Content-Type: application/json
+20180426 18:30:24.069 - DEBUG - X-roles: bo_3995
+20180426 18:30:24.069 - DEBUG - Request body:
+20180426 18:30:24.071 - DEBUG - {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183024052000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8a\xe0\xb8\xb1\xe0\xb9\x89\xe0\xb8\x99 33 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xaa\xe0\xb8\xb8\xe0\xb8\x82\xe0\xb8\xb8\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb4\xe0\xb8\x97",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\x95\xe0\xb8\xb1\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\xab\xe0\xb8\x99\xe0\xb8\xb7\xe0\xb8\xad",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\xa7\xe0\xb8\xb1\xe0\xb8\x92\xe0\xb8\x99\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e",
+    "postalCode": "111111",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "222222",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "333333",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+20180426 18:30:25.831 - DEBUG - Response status line: 201 Created
+20180426 18:30:25.832 - DEBUG - Response headers:
+20180426 18:30:25.832 - DEBUG - transfer-encoding: chunked
+20180426 18:30:25.832 - DEBUG - vary: Accept
+20180426 18:30:25.832 - DEBUG - server: gunicorn/19.6.0
+20180426 18:30:25.833 - DEBUG - connection: keep-alive
+20180426 18:30:25.833 - DEBUG - allow: POST, OPTIONS
+20180426 18:30:25.833 - DEBUG - date: Thu, 26 Apr 2018 11:30:25 GMT
+20180426 18:30:25.834 - DEBUG - x-frame-options: SAMEORIGIN
+20180426 18:30:25.834 - DEBUG - content-type: application/json
+20180426 18:30:25.834 - DEBUG - Response body:
+20180426 18:30:25.834 - DEBUG - {"key":"2TRFIMQVR218VKF5TR8D9NS4C","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183024052000"}
+20180426 18:30:25.834 - INFO - +----- END KW: HttpLibrary.HTTP.POST (1768)
+20180426 18:30:25.835 - INFO - +----- START KW: HttpLibrary.HTTP.Log Response Body [ ]
+20180426 18:30:25.835 - INFO - Response body:
+20180426 18:30:25.835 - INFO - {"key":"2TRFIMQVR218VKF5TR8D9NS4C","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183024052000"}
+20180426 18:30:25.836 - INFO - +----- END KW: HttpLibrary.HTTP.Log Response Body (0)
+20180426 18:30:25.836 - INFO - +----- START KW: HttpLibrary.HTTP.Response Status Code Should Equal [ 201 ]
+20180426 18:30:25.837 - INFO - +----- END KW: HttpLibrary.HTTP.Response Status Code Should Equal (0)
+20180426 18:30:25.837 - INFO - +---- END KW: Create Sales Order via API (1777)
+20180426 18:30:25.837 - INFO - +---- START KW: String.Replace String [ ${request_body} | ${externalSalesOrderId} | VAR_EXT_SO_ID ]
+20180426 18:30:25.838 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 1...
+20180426 18:30:25.839 - INFO - +---- END KW: String.Replace String (2)
+20180426 18:30:25.839 - INFO - +--- END KW: ${INDEX} = 4 (1788)
+20180426 18:30:25.839 - INFO - +--- START KW: ${INDEX} = 5 [ ]
+20180426 18:30:25.841 - INFO - +---- START KW: BuiltIn.Log To Console [ ${INDEX}/${loop_no} ]
+20180426 18:30:25.843 - INFO - +---- END KW: BuiltIn.Log To Console (1)
+20180426 18:30:25.844 - INFO - +---- START KW: DateTime.Get Current Date [ ]
+20180426 18:30:25.845 - INFO - ${current_date} = 2018-04-26 18:30:25.844
+20180426 18:30:25.845 - INFO - +---- END KW: DateTime.Get Current Date (2)
+20180426 18:30:25.845 - INFO - +---- START KW: DateTime.Convert Date [ ${current_date} | result_format=%Y%m%d%H%M%S%f ]
+20180426 18:30:25.846 - INFO - ${random_id} = 20180426183025844000
+20180426 18:30:25.847 - INFO - +---- END KW: DateTime.Convert Date (2)
+20180426 18:30:25.847 - INFO - +---- START KW: BuiltIn.Set Variable [ so_${partnerId}_${random_id} ]
+20180426 18:30:25.848 - INFO - ${externalSalesOrderId} = so_3995_20180426183025844000
+20180426 18:30:25.848 - INFO - +---- END KW: BuiltIn.Set Variable (1)
+20180426 18:30:25.848 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_EXT_SO_ID | ${externalSalesOrderId} ]
+20180426 18:30:25.849 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183025844000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:25.849 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:25.850 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_ORDER_DATE | ${current_date} ]
+20180426 18:30:25.850 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183025844000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:25.851 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:25.851 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_INVOICE_DATE | ${current_date} ]
+20180426 18:30:25.852 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183025844000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:25.852 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:25.853 - INFO - +---- START KW: Create Sales Order via API [ ${request_body} ]
+20180426 18:30:25.855 - INFO - +----- START KW: HttpLibrary.HTTP.Create Http Context [ ${endpoint_orderstore} | http ]
+20180426 18:30:25.855 - INFO - Host for next HTTP request set to 'order-store-staging.acommercedev.service'
+20180426 18:30:25.856 - INFO - Scheme for next HTTP request set to 'http'
+20180426 18:30:25.856 - INFO - +----- END KW: HttpLibrary.HTTP.Create Http Context (2)
+20180426 18:30:25.856 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ Content-Type | application/json ]
+20180426 18:30:25.861 - INFO - Set request header "Content-Type" to "application/json"
+20180426 18:30:25.861 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (5)
+20180426 18:30:25.861 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-roles | bo_${partnerId} ]
+20180426 18:30:25.862 - INFO - Set request header "X-roles" to "bo_3995"
+20180426 18:30:25.863 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (2)
+20180426 18:30:25.863 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-User-Name | bh_automation ]
+20180426 18:30:25.868 - INFO - Set request header "X-User-Name" to "bh_automation"
+20180426 18:30:25.869 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (5)
+20180426 18:30:25.869 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Body [ ${request_body} ]
+20180426 18:30:25.870 - INFO - Request body set to "{
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183025844000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ชั้น 33 ถนนสุขุมวิท",
+    "subDistrict": "แขวงคลองตันเหนือ",
+    "district": "เขตวัฒนา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพ",
+    "postalCode": "111111",
+    "country": "ไทย / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "222222",
+    "country": "ไทย / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "333333",
+    "country": "ไทย / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+".
+20180426 18:30:25.871 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Body (2)
+20180426 18:30:25.874 - INFO - +----- START KW: HttpLibrary.HTTP.Next Request May Not Succeed [ ]
+20180426 18:30:25.911 - INFO - +----- END KW: HttpLibrary.HTTP.Next Request May Not Succeed (1)
+20180426 18:30:25.913 - INFO - +----- START KW: HttpLibrary.HTTP.POST [ ${order_store_path} ]
+20180426 18:30:25.914 - DEBUG - Performing POST request on http://order-store-staging.acommercedev.service/os/item-sales-orders/
+20180426 18:30:25.914 - DEBUG - Request headers:
+20180426 18:30:25.914 - DEBUG - Host: order-store-staging.acommercedev.service
+20180426 18:30:25.914 - DEBUG - X-User-Name: bh_automation
+20180426 18:30:25.914 - DEBUG - Content-Type: application/json
+20180426 18:30:25.914 - DEBUG - X-roles: bo_3995
+20180426 18:30:25.915 - DEBUG - Request body:
+20180426 18:30:25.917 - DEBUG - {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183025844000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8a\xe0\xb8\xb1\xe0\xb9\x89\xe0\xb8\x99 33 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xaa\xe0\xb8\xb8\xe0\xb8\x82\xe0\xb8\xb8\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb4\xe0\xb8\x97",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\x95\xe0\xb8\xb1\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\xab\xe0\xb8\x99\xe0\xb8\xb7\xe0\xb8\xad",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\xa7\xe0\xb8\xb1\xe0\xb8\x92\xe0\xb8\x99\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e",
+    "postalCode": "111111",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "222222",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "333333",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+20180426 18:30:27.240 - DEBUG - Response status line: 201 Created
+20180426 18:30:27.241 - DEBUG - Response headers:
+20180426 18:30:27.241 - DEBUG - transfer-encoding: chunked
+20180426 18:30:27.241 - DEBUG - vary: Accept
+20180426 18:30:27.241 - DEBUG - server: gunicorn/19.6.0
+20180426 18:30:27.241 - DEBUG - connection: keep-alive
+20180426 18:30:27.241 - DEBUG - allow: POST, OPTIONS
+20180426 18:30:27.241 - DEBUG - date: Thu, 26 Apr 2018 11:30:27 GMT
+20180426 18:30:27.241 - DEBUG - x-frame-options: SAMEORIGIN
+20180426 18:30:27.241 - DEBUG - content-type: application/json
+20180426 18:30:27.241 - DEBUG - Response body:
+20180426 18:30:27.241 - DEBUG - {"key":"LJA9G4JIA9L2K6XS8NSZA106B","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183025844000"}
+20180426 18:30:27.242 - INFO - +----- END KW: HttpLibrary.HTTP.POST (1329)
+20180426 18:30:27.242 - INFO - +----- START KW: HttpLibrary.HTTP.Log Response Body [ ]
+20180426 18:30:27.242 - INFO - Response body:
+20180426 18:30:27.242 - INFO - {"key":"LJA9G4JIA9L2K6XS8NSZA106B","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183025844000"}
+20180426 18:30:27.243 - INFO - +----- END KW: HttpLibrary.HTTP.Log Response Body (1)
+20180426 18:30:27.243 - INFO - +----- START KW: HttpLibrary.HTTP.Response Status Code Should Equal [ 201 ]
+20180426 18:30:27.243 - INFO - +----- END KW: HttpLibrary.HTTP.Response Status Code Should Equal (0)
+20180426 18:30:27.244 - INFO - +---- END KW: Create Sales Order via API (1390)
+20180426 18:30:27.244 - INFO - +---- START KW: String.Replace String [ ${request_body} | ${externalSalesOrderId} | VAR_EXT_SO_ID ]
+20180426 18:30:27.244 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 1...
+20180426 18:30:27.245 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:27.245 - INFO - +--- END KW: ${INDEX} = 5 (1406)
+20180426 18:30:27.245 - INFO - +--- START KW: ${INDEX} = 6 [ ]
+20180426 18:30:27.245 - INFO - +---- START KW: BuiltIn.Log To Console [ ${INDEX}/${loop_no} ]
+20180426 18:30:27.246 - INFO - +---- END KW: BuiltIn.Log To Console (1)
+20180426 18:30:27.246 - INFO - +---- START KW: DateTime.Get Current Date [ ]
+20180426 18:30:27.247 - INFO - ${current_date} = 2018-04-26 18:30:27.247
+20180426 18:30:27.247 - INFO - +---- END KW: DateTime.Get Current Date (1)
+20180426 18:30:27.247 - INFO - +---- START KW: DateTime.Convert Date [ ${current_date} | result_format=%Y%m%d%H%M%S%f ]
+20180426 18:30:27.248 - INFO - ${random_id} = 20180426183027247000
+20180426 18:30:27.249 - INFO - +---- END KW: DateTime.Convert Date (2)
+20180426 18:30:27.249 - INFO - +---- START KW: BuiltIn.Set Variable [ so_${partnerId}_${random_id} ]
+20180426 18:30:27.250 - INFO - ${externalSalesOrderId} = so_3995_20180426183027247000
+20180426 18:30:27.250 - INFO - +---- END KW: BuiltIn.Set Variable (1)
+20180426 18:30:27.250 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_EXT_SO_ID | ${externalSalesOrderId} ]
+20180426 18:30:27.251 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183027247000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:27.251 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:27.251 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_ORDER_DATE | ${current_date} ]
+20180426 18:30:27.252 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183027247000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:27.252 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:27.253 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_INVOICE_DATE | ${current_date} ]
+20180426 18:30:27.253 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183027247000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:27.254 - INFO - +---- END KW: String.Replace String (0)
+20180426 18:30:27.254 - INFO - +---- START KW: Create Sales Order via API [ ${request_body} ]
+20180426 18:30:27.255 - INFO - +----- START KW: HttpLibrary.HTTP.Create Http Context [ ${endpoint_orderstore} | http ]
+20180426 18:30:27.256 - INFO - Host for next HTTP request set to 'order-store-staging.acommercedev.service'
+20180426 18:30:27.256 - INFO - Scheme for next HTTP request set to 'http'
+20180426 18:30:27.256 - INFO - +----- END KW: HttpLibrary.HTTP.Create Http Context (1)
+20180426 18:30:27.256 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ Content-Type | application/json ]
+20180426 18:30:27.257 - INFO - Set request header "Content-Type" to "application/json"
+20180426 18:30:27.257 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:27.258 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-roles | bo_${partnerId} ]
+20180426 18:30:27.258 - INFO - Set request header "X-roles" to "bo_3995"
+20180426 18:30:27.258 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:27.259 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-User-Name | bh_automation ]
+20180426 18:30:27.259 - INFO - Set request header "X-User-Name" to "bh_automation"
+20180426 18:30:27.259 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (0)
+20180426 18:30:27.259 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Body [ ${request_body} ]
+20180426 18:30:27.260 - INFO - Request body set to "{
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183027247000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ชั้น 33 ถนนสุขุมวิท",
+    "subDistrict": "แขวงคลองตันเหนือ",
+    "district": "เขตวัฒนา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพ",
+    "postalCode": "111111",
+    "country": "ไทย / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "222222",
+    "country": "ไทย / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "333333",
+    "country": "ไทย / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+".
+20180426 18:30:27.260 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Body (1)
+20180426 18:30:27.260 - INFO - +----- START KW: HttpLibrary.HTTP.Next Request May Not Succeed [ ]
+20180426 18:30:27.261 - INFO - +----- END KW: HttpLibrary.HTTP.Next Request May Not Succeed (0)
+20180426 18:30:27.261 - INFO - +----- START KW: HttpLibrary.HTTP.POST [ ${order_store_path} ]
+20180426 18:30:27.261 - DEBUG - Performing POST request on http://order-store-staging.acommercedev.service/os/item-sales-orders/
+20180426 18:30:27.261 - DEBUG - Request headers:
+20180426 18:30:27.262 - DEBUG - Host: order-store-staging.acommercedev.service
+20180426 18:30:27.262 - DEBUG - X-User-Name: bh_automation
+20180426 18:30:27.262 - DEBUG - Content-Type: application/json
+20180426 18:30:27.262 - DEBUG - X-roles: bo_3995
+20180426 18:30:27.262 - DEBUG - Request body:
+20180426 18:30:27.263 - DEBUG - {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183027247000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8a\xe0\xb8\xb1\xe0\xb9\x89\xe0\xb8\x99 33 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xaa\xe0\xb8\xb8\xe0\xb8\x82\xe0\xb8\xb8\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb4\xe0\xb8\x97",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\x95\xe0\xb8\xb1\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\xab\xe0\xb8\x99\xe0\xb8\xb7\xe0\xb8\xad",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\xa7\xe0\xb8\xb1\xe0\xb8\x92\xe0\xb8\x99\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e",
+    "postalCode": "111111",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "222222",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "333333",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+20180426 18:30:28.149 - DEBUG - Response status line: 201 Created
+20180426 18:30:28.150 - DEBUG - Response headers:
+20180426 18:30:28.150 - DEBUG - transfer-encoding: chunked
+20180426 18:30:28.150 - DEBUG - vary: Accept
+20180426 18:30:28.150 - DEBUG - server: gunicorn/19.6.0
+20180426 18:30:28.150 - DEBUG - connection: keep-alive
+20180426 18:30:28.150 - DEBUG - allow: POST, OPTIONS
+20180426 18:30:28.150 - DEBUG - date: Thu, 26 Apr 2018 11:30:28 GMT
+20180426 18:30:28.150 - DEBUG - x-frame-options: SAMEORIGIN
+20180426 18:30:28.150 - DEBUG - content-type: application/json
+20180426 18:30:28.150 - DEBUG - Response body:
+20180426 18:30:28.150 - DEBUG - {"key":"CGJILN4G7OACMENCYAV3B0BP7","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183027247000"}
+20180426 18:30:28.151 - INFO - +----- END KW: HttpLibrary.HTTP.POST (890)
+20180426 18:30:28.151 - INFO - +----- START KW: HttpLibrary.HTTP.Log Response Body [ ]
+20180426 18:30:28.151 - INFO - Response body:
+20180426 18:30:28.151 - INFO - {"key":"CGJILN4G7OACMENCYAV3B0BP7","partnerId":"3995","externalSalesOrderId":"so_3995_20180426183027247000"}
+20180426 18:30:28.151 - INFO - +----- END KW: HttpLibrary.HTTP.Log Response Body (0)
+20180426 18:30:28.151 - INFO - +----- START KW: HttpLibrary.HTTP.Response Status Code Should Equal [ 201 ]
+20180426 18:30:28.152 - INFO - +----- END KW: HttpLibrary.HTTP.Response Status Code Should Equal (1)
+20180426 18:30:28.152 - INFO - +---- END KW: Create Sales Order via API (898)
+20180426 18:30:28.152 - INFO - +---- START KW: String.Replace String [ ${request_body} | ${externalSalesOrderId} | VAR_EXT_SO_ID ]
+20180426 18:30:28.153 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 1...
+20180426 18:30:28.153 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:28.153 - INFO - +--- END KW: ${INDEX} = 6 (908)
+20180426 18:30:28.153 - INFO - +--- START KW: ${INDEX} = 7 [ ]
+20180426 18:30:28.153 - INFO - +---- START KW: BuiltIn.Log To Console [ ${INDEX}/${loop_no} ]
+20180426 18:30:28.154 - INFO - +---- END KW: BuiltIn.Log To Console (1)
+20180426 18:30:28.154 - INFO - +---- START KW: DateTime.Get Current Date [ ]
+20180426 18:30:28.155 - INFO - ${current_date} = 2018-04-26 18:30:28.155
+20180426 18:30:28.155 - INFO - +---- END KW: DateTime.Get Current Date (1)
+20180426 18:30:28.155 - INFO - +---- START KW: DateTime.Convert Date [ ${current_date} | result_format=%Y%m%d%H%M%S%f ]
+20180426 18:30:28.156 - INFO - ${random_id} = 20180426183028155000
+20180426 18:30:28.156 - INFO - +---- END KW: DateTime.Convert Date (1)
+20180426 18:30:28.156 - INFO - +---- START KW: BuiltIn.Set Variable [ so_${partnerId}_${random_id} ]
+20180426 18:30:28.157 - INFO - ${externalSalesOrderId} = so_3995_20180426183028155000
+20180426 18:30:28.158 - INFO - +---- END KW: BuiltIn.Set Variable (1)
+20180426 18:30:28.158 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_EXT_SO_ID | ${externalSalesOrderId} ]
+20180426 18:30:28.163 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183028155000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:28.163 - INFO - +---- END KW: String.Replace String (5)
+20180426 18:30:28.163 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_ORDER_DATE | ${current_date} ]
+20180426 18:30:28.164 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183028155000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:28.164 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:28.165 - INFO - +---- START KW: String.Replace String [ ${request_body} | VAR_INVOICE_DATE | ${current_date} ]
+20180426 18:30:28.165 - INFO - ${request_body} = {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183028155000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate"...
+20180426 18:30:28.165 - INFO - +---- END KW: String.Replace String (1)
+20180426 18:30:28.166 - INFO - +---- START KW: Create Sales Order via API [ ${request_body} ]
+20180426 18:30:28.166 - INFO - +----- START KW: HttpLibrary.HTTP.Create Http Context [ ${endpoint_orderstore} | http ]
+20180426 18:30:28.167 - INFO - Host for next HTTP request set to 'order-store-staging.acommercedev.service'
+20180426 18:30:28.167 - INFO - Scheme for next HTTP request set to 'http'
+20180426 18:30:28.167 - INFO - +----- END KW: HttpLibrary.HTTP.Create Http Context (1)
+20180426 18:30:28.168 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ Content-Type | application/json ]
+20180426 18:30:28.169 - INFO - Set request header "Content-Type" to "application/json"
+20180426 18:30:28.169 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:28.169 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-roles | bo_${partnerId} ]
+20180426 18:30:28.170 - INFO - Set request header "X-roles" to "bo_3995"
+20180426 18:30:28.170 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:28.170 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Header [ X-User-Name | bh_automation ]
+20180426 18:30:28.171 - INFO - Set request header "X-User-Name" to "bh_automation"
+20180426 18:30:28.172 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Header (1)
+20180426 18:30:28.173 - INFO - +----- START KW: HttpLibrary.HTTP.Set Request Body [ ${request_body} ]
+20180426 18:30:28.174 - INFO - Request body set to "{
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183028155000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ชั้น 33 ถนนสุขุมวิท",
+    "subDistrict": "แขวงคลองตันเหนือ",
+    "district": "เขตวัฒนา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพ",
+    "postalCode": "111111",
+    "country": "ไทย / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "222222",
+    "country": "ไทย / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "333333",
+    "country": "ไทย / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+".
+20180426 18:30:28.174 - INFO - +----- END KW: HttpLibrary.HTTP.Set Request Body (2)
+20180426 18:30:28.176 - INFO - +----- START KW: HttpLibrary.HTTP.Next Request May Not Succeed [ ]
+20180426 18:30:28.179 - INFO - +----- END KW: HttpLibrary.HTTP.Next Request May Not Succeed (3)
+20180426 18:30:28.180 - INFO - +----- START KW: HttpLibrary.HTTP.POST [ ${order_store_path} ]
+20180426 18:30:28.183 - DEBUG - Performing POST request on http://order-store-staging.acommercedev.service/os/item-sales-orders/
+20180426 18:30:28.183 - DEBUG - Request headers:
+20180426 18:30:28.183 - DEBUG - Host: order-store-staging.acommercedev.service
+20180426 18:30:28.184 - DEBUG - X-User-Name: bh_automation
+20180426 18:30:28.184 - DEBUG - Content-Type: application/json
+20180426 18:30:28.184 - DEBUG - X-roles: bo_3995
+20180426 18:30:28.184 - DEBUG - Request body:
+20180426 18:30:28.186 - DEBUG - {
+  "partnerShippingType": "STANDARD_2_4_DAYS",
+  "partnerPaymentType": "CCOD",
+  "externalSalesOrderId": "so_3995_20180426183028155000",
+  "orderDate": "2018-04-26 18:30:21.282",
+  "inputInvoiceDate": "2018-04-26 18:30:21.282",
+  "orderNotes": "Beehive QA Testing",
+  "shippingNotes": "Beehive QA Testing",
+  "salesSubChannelName": "ALIBABA",
+  "salesChannelType": "e-Marketplace",
+  "salesChannelId": "ALI",
+  "customerTaxId": "ALI_TAX_0001",
+  "customerTaxType": "ALI_TAX_TYPE",
+  "customerBranchCode": "ALI_BRANCH_0001",
+  "currencyUnit": "THB",
+  "subTotal": 100.00,
+  "grossTotal": 400,
+  "collectionAmount": 500,
+  "insuranceDeclaredValue": 600,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8a\xe0\xb8\xb1\xe0\xb9\x89\xe0\xb8\x99 33 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xaa\xe0\xb8\xb8\xe0\xb8\x82\xe0\xb8\xb8\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb4\xe0\xb8\x97",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\x95\xe0\xb8\xb1\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\xab\xe0\xb8\x99\xe0\xb8\xb7\xe0\xb8\xad",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\xa7\xe0\xb8\xb1\xe0\xb8\x92\xe0\xb8\x99\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e",
+    "postalCode": "111111",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "222222",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 \xe0\xb9\x82\xe0\xb8\x84\xe0\xb8\x87\xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3 11 \xe0\xb8\x8b.2 \xe0\xb8\xab\xe0\xb8\xa1\xe0\xb8\xb9\xe0\xb9\x88\xe0\xb8\x9a\xe0\xb9\x89\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb9\x80\xe0\xb8\x84\xe0\xb8\x8b\xe0\xb8\xb5 \xe0\xb8\x81\xe0\xb8\xb2\xe0\xb8\xa3\xe0\xb9\x8c\xe0\xb9\x80\xe0\xb8\x94\xe0\xb9\x89\xe0\xb8\x99 \xe0\xb9\x82\xe0\xb8\xae\xe0\xb8\xa1 \xe0\xb8\x96\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88",
+    "address2": "\xe0\xb8\x8b\xe0\xb8\xad\xe0\xb8\xa2\xe0\xb8\x99\xe0\xb8\xb4\xe0\xb8\xa1\xe0\xb8\xb4\xe0\xb8\x95\xe0\xb8\xa3\xe0\xb9\x83\xe0\xb8\xab\xe0\xb8\xa1\xe0\xb9\x88 40",
+    "subDistrict": "\xe0\xb9\x81\xe0\xb8\x82\xe0\xb8\xa7\xe0\xb8\x87\xe0\xb8\x9a\xe0\xb8\xb2\xe0\xb8\x87\xe0\xb8\x88\xe0\xb8\xb2\xe0\xb8\x81",
+    "district": "\xe0\xb9\x80\xe0\xb8\x82\xe0\xb8\x95\xe0\xb8\x84\xe0\xb8\xa5\xe0\xb8\xad\xe0\xb8\x87\xe0\xb8\xaa\xe0\xb8\xb2\xe0\xb8\xa1\xe0\xb8\xa7\xe0\xb8\xb2",
+    "city": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3/ Bangkok",
+    "province": "\xe0\xb8\x81\xe0\xb8\xa3\xe0\xb8\xb8\xe0\xb8\x87\xe0\xb9\x80\xe0\xb8\x97\xe0\xb8\x9e\xe0\xb8\xa1\xe0\xb8\xab\xe0\xb8\xb2\xe0\xb8\x99\xe0\xb8\x84\xe0\xb8\xa3",
+    "postalCode": "333333",
+    "country": "\xe0\xb9\x84\xe0\xb8\x97\xe0\xb8\xa2 / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "1",
+      "partnerId": "3995",
+      "productId": "NW_ITEM_3995_GENERAL_001",
+      "productTitle": "NW_ITEM_3995_GENERAL_001",
+      "qty": "1",
+      "grossAmount": "400",
+      "items": [
+        {
+          "partnerItemId": "NW_ITEM_3995_GENERAL_001",
+          "partnerId": "3995",
+          "qty": "1"
+        }
+      ]
+    }
+  ]
+}
+20180426 18:30:29.572 - DEBUG - Response status line: 502 Bad Gateway
+20180426 18:30:29.572 - DEBUG - Response headers:
+20180426 18:30:29.572 - DEBUG - date: Thu, 26 Apr 2018 11:30:29 GMT
+20180426 18:30:29.572 - DEBUG - content-length: 138
+20180426 18:30:29.573 - DEBUG - content-type: text/html
+20180426 18:30:29.573 - DEBUG - connection: keep-alive
+20180426 18:30:29.573 - DEBUG - server: awselb/2.0
+20180426 18:30:29.573 - DEBUG - Response body:
+20180426 18:30:29.573 - DEBUG - <html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+</body>
+</html>
+20180426 18:30:29.573 - INFO - +----- END KW: HttpLibrary.HTTP.POST (1393)
+20180426 18:30:29.573 - INFO - +----- START KW: HttpLibrary.HTTP.Log Response Body [ ]
+20180426 18:30:29.574 - INFO - Response body:
+20180426 18:30:29.574 - INFO - <html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+</body>
+</html>
+20180426 18:30:29.574 - INFO - +----- END KW: HttpLibrary.HTTP.Log Response Body (1)
+20180426 18:30:29.574 - INFO - +----- START KW: HttpLibrary.HTTP.Response Status Code Should Equal [ 201 ]
+20180426 18:30:29.575 - FAIL - "502 Bad Gateway" does not start with "201", but should have.
+20180426 18:30:29.575 - DEBUG - Traceback (most recent call last):
+  File "/Users/nattapol/venv_name/bh-qa-automation/lib/python2.7/site-packages/HttpLibrary/__init__.py", line 354, in response_status_code_should_equal
+    self.response.status, status_code)
+20180426 18:30:29.575 - INFO - +----- END KW: HttpLibrary.HTTP.Response Status Code Should Equal (1)
+20180426 18:30:29.576 - INFO - +---- END KW: Create Sales Order via API (1410)
+20180426 18:30:29.576 - INFO - +--- END KW: ${INDEX} = 7 (1423)
+20180426 18:30:29.576 - INFO - +-- END KW: ${INDEX} IN RANGE [ 1 | ${loop_no}+1 ] (8296)
+------------------------------------------------------------------------------
+20180426 18:30:29.578 - INFO - +- END TEST: Gen SO (8348)
+------------------------------------------------------------------------------
+20180426 18:30:29.581 - INFO - + END SUITE: Shoot So (8676)
+==============================================================================

@@ -1,0 +1,16 @@
+<message>
+    <control>
+        <turn-around-key>53032bb2-08d6-45c5-b416-43cf8511ef37752cbd54-6a19-44e2-a1e7-4a04cdc34c5c</turn-around-key>
+        <message-id>752cbd54-6a19-44e2-a1e7-4a04cdc34c5c53032bb2-08d6-45c5-b416-43cf8511ef37</message-id>
+    </control>
+    <body>
+        <result>200</result>
+        <response>
+            <Warehouse>VAR_WAREHOUSE</Warehouse>
+            <ShipmentId>VAR_SHIPMENT_ID</ShipmentId>
+            <Status>Picking Pending</Status>
+            <Result>SUCCESS</Result>
+            <DateTimeStamp>VAR_DATETIME</DateTimeStamp>
+        </response>
+    </body>
+</message>

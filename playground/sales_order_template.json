@@ -1,0 +1,76 @@
+{
+  "partnerShippingType": "VAR_PARTNER_SHIPPING_TYPE",
+  "partnerPaymentType": "VAR_PARTNER_PAYMENT_TYPE",
+  "externalSalesOrderId": "VAR_EXT_SO_ID",
+  "orderDate": "VAR_ORDER_DATE",
+  "inputInvoiceDate": "VAR_INVOICE_DATE",
+  "orderNotes": "VAR_ORDER_NOTE",
+  "shippingNotes": "VAR_SHIPPING_NOTE",
+  "salesSubChannelName": "VAR_SALE_SUB_CH_NAME",
+  "salesChannelType": "VAR_SALE_CH_TYPE",
+  "salesChannelId": "VAR_SALE_CH_ID",
+  "customerTaxId": "VAR_CUSTOMER_TAX_ID",
+  "customerTaxType": "VAR_CUSTOMER_TAX_TYPE",
+  "customerBranchCode": "VAR_CUSTOMER_BRANCH_CODE",
+  "currencyUnit": "VAR_CURRENCY_UNIT",
+  "subTotal": VAR_SUB_TOTAL,
+  "grossTotal": VAR_GROSS_TOTAL,
+  "collectionAmount": VAR_COLLECTION_AMOUNT,
+  "insuranceDeclaredValue": VAR_INSURANCE_DECLARED_VALUE,
+  "customerInfo": {
+    "addressee": "Dominic Torretto customerInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ชั้น 33 ถนนสุขุมวิท",
+    "subDistrict": "แขวงคลองตันเหนือ",
+    "district": "เขตวัฒนา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพ",
+    "postalCode": "111111",
+    "country": "ไทย / Thailand",
+    "phone": "1111111111",
+    "email": "customerInfo@acommerce.asia"
+  },
+  "orderBillingInfo": {
+    "addressee": "Dominic Torretto orderBillingInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "222222",
+    "country": "ไทย / Thailand",
+    "phone": "2222222222",
+    "email": "orderBillingInfo@acommerce.asia"
+  },
+  "orderShipmentInfo": {
+    "addressee": "Dominic Torretto orderShipmentInfo",
+    "address1": "47/641 โคงการ 11 ซ.2 หมู่บ้านเคซี การ์เด้น โฮม ถนนนิมิตรใหม่",
+    "address2": "ซอยนิมิตรใหม่ 40",
+    "subDistrict": "แขวงบางจาก",
+    "district": "เขตคลองสามวา",
+    "city": "กรุงเทพมหานคร/ Bangkok",
+    "province": "กรุงเทพมหานคร",
+    "postalCode": "333333",
+    "country": "ไทย / Thailand",
+    "phone": "3333333333",
+    "email": "orderShipmentInfo@acommerce.asia"
+  },
+  "products": [
+    {
+      "lineNumber": "VAR_LINE_NUMBER",
+      "partnerId": "VAR_PARTNER_ID",
+      "productId": "VAR_PRODUCT_ID",
+      "productTitle": "VAR_PRODUCT_TITLE",
+      "qty": "VAR_PRODUCT_QTY",
+      "grossAmount": "VAR_GROSS_AMOUNT",
+      "items": [
+        {
+          "partnerItemId": "VAR_PARTNER_ITEM_ID",
+          "partnerId": "VAR_PARTNER_ID",
+          "qty": "VAR_ITEM_QTY"
+        }
+      ]
+    }
+  ]
+}

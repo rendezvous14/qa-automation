@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="STAGING_SO_CREATION" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="POST" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">2000</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-user-name</stringProp>
+              <stringProp name="Header.value">bh-automation</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Item Sales Order" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{  &#xd;
+   &quot;orderDate&quot;:&quot;2018-05-17T01:00:29Z&quot;,&#xd;
+   &quot;inputInvoiceDate&quot;:&quot;2018-05-17T11:00:29Z&quot;,&#xd;
+   &quot;partnerShippingType&quot;:&quot;STANDARD_2_4_DAYS&quot;,&#xd;
+   &quot;partnerPaymentType&quot;:&quot;COD&quot;,&#xd;
+   &quot;externalSalesOrderId&quot;:&quot;PACKED_${__threadNum}${__time()}&quot;,&#xd;
+   &quot;salesSubChannelName&quot;:&quot;Company Website&quot;,&#xd;
+   &quot;salesChannelType&quot;:&quot;Online&quot;,&#xd;
+   &quot;salesChannelId&quot;:&quot;Company Website&quot;,&#xd;
+   &quot;orderShipmentInfo&quot;:{  &#xd;
+      &quot;addressee&quot;:&quot;Dominic Torreto&quot;,&#xd;
+      &quot;address1&quot;:&quot;111 Rama 4 rd.&quot;,&#xd;
+      &quot;address2&quot;:&quot;&quot;,&#xd;
+      &quot;subDistrict&quot;:&quot;Silom&quot;,&#xd;
+      &quot;district&quot;:&quot;Bangrak&quot;,&#xd;
+      &quot;city&quot;:&quot;Bangkok&quot;,&#xd;
+      &quot;province&quot;:&quot;Bangkok&quot;,&#xd;
+      &quot;postalCode&quot;:&quot;10500&quot;,&#xd;
+      &quot;country&quot;:&quot;Thailand&quot;,&#xd;
+      &quot;phone&quot;:&quot;081-111-2222&quot;,&#xd;
+      &quot;email&quot;:&quot;smith@a.com&quot;&#xd;
+   },&#xd;
+   &quot;customerInfo&quot;:{  &#xd;
+      &quot;addressee&quot;:&quot;Dominic Torreto&quot;,&#xd;
+      &quot;address1&quot;:&quot;111 Rama 4 rd.&quot;,&#xd;
+      &quot;address2&quot;:&quot;&quot;,&#xd;
+      &quot;subDistrict&quot;:&quot;Silom&quot;,&#xd;
+      &quot;district&quot;:&quot;Bangrak&quot;,&#xd;
+      &quot;city&quot;:&quot;Bangkok&quot;,&#xd;
+      &quot;province&quot;:&quot;Bangkok&quot;,&#xd;
+      &quot;postalCode&quot;:&quot;10500&quot;,&#xd;
+      &quot;country&quot;:&quot;Thailand&quot;,&#xd;
+      &quot;phone&quot;:&quot;081-111-2222&quot;,&#xd;
+      &quot;email&quot;:&quot;smith@a.com&quot;&#xd;
+   },&#xd;
+   &quot;products&quot;:[  &#xd;
+      {  &#xd;
+         &quot;lineNumber&quot;:1,&#xd;
+         &quot;partnerId&quot;:&quot;4005&quot;,&#xd;
+         &quot;productId&quot;:&quot;PERF_4005&quot;,&#xd;
+         &quot;productTitle&quot;:&quot;PERF_4005&quot;,&#xd;
+         &quot;qty&quot;: 1,&#xd;
+         &quot;grossAmount&quot;:100.00000,&#xd;
+         &quot;items&quot;:[  &#xd;
+            {  &#xd;
+               &quot;partnerItemId&quot;:&quot;PERF_4005&quot;,&#xd;
+               &quot;partnerId&quot;:&quot;4005&quot;,&#xd;
+               &quot;qty&quot;: 1&#xd;
+            }&#xd;
+         ]&#xd;
+      }&#xd;
+   ],&#xd;
+   &quot;importedBy&quot; : &quot;SYSTEM_MIGRATION&quot;,&#xd;
+   &quot;shippingNotes&quot;: &quot;Test Shipping Notes&quot;,&#xd;
+  &quot;insuranceDeclaredValue&quot;: 400.99999,&#xd;
+  &quot;customerBranchCode&quot;: &quot;empty&quot;,&#xd;
+  &quot;partnerId&quot;: 4005,&#xd;
+  &quot;grossTotal&quot;: 100.00000,&#xd;
+  &quot;collectionAmount&quot;: 100.00000,&#xd;
+  &quot;subTotal&quot;: 100.00000,&#xd;
+  &quot;currencyUnit&quot;: &quot;THB&quot;,&#xd;
+  &quot;orderNotes&quot;: &quot;Test Order Notes&quot;,&#xd;
+  &quot;customerTaxId&quot;: &quot;STRING&quot;,&#xd;
+  &quot;customerTaxType&quot;: &quot;STRING&quot;,&#xd;
+  &quot;paymentType&quot;: &quot;COD&quot;,&#xd;
+  &quot;shippingType&quot;: &quot;NEXT_DAY&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">order-store-staging.acommercedev.service</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/os/item-sales-orders/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">/Users/nattapol/log.log</stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>true</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">/Users/nattapol/log.log</stringProp>
+          <boolProp name="ResultCollector.success_only_logging">true</boolProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

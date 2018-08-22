@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180822 10:09:14.731" generator="Robot 3.0.1 (Python 2.7.13 on darwin)">
+<suite source="/Users/nattapol/bh-qa-automation/test_suite/item_master/Issue.robot" id="s1" name="Issue">
+<test id="s1-t1" name="BEEH-1153 [ITEM] Duplicate error message_01_no_require_field">
+<kw name="Get Current Date" library="DateTime">
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<arguments>
+<arg>result_format=%Y%m%d_%H%M%S</arg>
+</arguments>
+<assign>
+<var>${random}</var>
+</assign>
+<msg timestamp="20180822 10:09:24.843" level="INFO">${random} = 20180822_100924</msg>
+<status status="PASS" endtime="20180822 10:09:24.843" starttime="20180822 10:09:24.842"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>UI_${random}</arg>
+</arguments>
+<assign>
+<var>${partner_item_id}</var>
+</assign>
+<msg timestamp="20180822 10:09:24.843" level="INFO">${partner_item_id} = UI_20180822_100924</msg>
+<status status="PASS" endtime="20180822 10:09:24.843" starttime="20180822 10:09:24.843"></status>
+</kw>
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>${R_TEMPLATE_ITEM_MANDA_AND_NO_REQUIRE_FIELD_CSV}</arg>
+</arguments>
+<assign>
+<var>${request_body}</var>
+</assign>
+<msg timestamp="20180822 10:09:24.844" html="yes" level="INFO">Getting file '&lt;a href="file:///Users/nattapol/bh-qa-automation/test_suite/item_master/test_data/csv/create_item_manda_and_no_require_field.csv"&gt;/Users/nattapol/bh-qa-automation/test_suite/item_master/test_data/csv/create_item_manda_and_no_require_field.csv&lt;/a&gt;'.</msg>
+<msg timestamp="20180822 10:09:24.846" level="INFO">${request_body} = partnerItemId,description
+VAR_PARTNER_ITEM_ID,VAR_DESCRIPTION</msg>
+<status status="PASS" endtime="20180822 10:09:24.846" starttime="20180822 10:09:24.844"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${request_body}</arg>
+<arg>VAR_PARTNER_ITEM_ID</arg>
+<arg>${partner_item_id}</arg>
+</arguments>
+<assign>
+<var>${request_body}</var>
+</assign>
+<msg timestamp="20180822 10:09:24.847" level="INFO">${request_body} = partnerItemId,description
+UI_20180822_100924,VAR_DESCRIPTION</msg>
+<status status="PASS" endtime="20180822 10:09:24.847" starttime="20180822 10:09:24.846"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${request_body}</arg>
+<arg>VAR_DESCRIPTION</arg>
+<arg>Test by automation script</arg>
+</arguments>
+<assign>
+<var>${request_body}</var>
+</assign>
+<msg timestamp="20180822 10:09:24.847" level="INFO">${request_body} = partnerItemId,description
+UI_20180822_100924,Test by automation script</msg>
+<status status="PASS" endtime="20180822 10:09:24.847" starttime="20180822 10:09:24.847"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${request_body}</arg>
+</arguments>
+<msg timestamp="20180822 10:09:24.848" level="INFO">partnerItemId,description
+UI_20180822_100924,Test by automation script</msg>
+<status status="PASS" endtime="20180822 10:09:24.848" starttime="20180822 10:09:24.848"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${R_TEST_DATA_ITEM_GENERATE}create_${partner_item_id}.csv</arg>
+<arg>${request_body}</arg>
+</arguments>
+<msg timestamp="20180822 10:09:24.849" html="yes" level="INFO">Created file '&lt;a href="file:///Users/nattapol/bh-qa-automation/test_suite/item_master/test_data/generate/create_UI_20180822_100924.csv"&gt;/Users/nattapol/bh-qa-automation/test_suite/item_master/test_data/generate/create_UI_20180822_100924.csv&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180822 10:09:24.849" starttime="20180822 10:09:24.848"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${R_INVENTORY_LIST}</arg>
+<arg>&lt;CONFIG_PARTNER_ID&gt;</arg>
+<arg>${R_PARTNER_ID_NS_6}</arg>
+</arguments>
+<assign>
+<var>${R_INVENTORY_LIST}</var>
+</assign>
+<msg timestamp="20180822 10:09:24.850" level="INFO">${R_INVENTORY_LIST} = https://admindev.acommercedev.com/beehive/frontend/ui-inventory/3880</msg>
+<status status="PASS" endtime="20180822 10:09:24.850" starttime="20180822 10:09:24.849"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${R_IMPORT_HIST_INVENTORY}</arg>
+<arg>&lt;CONFIG_PARTNER_ID&gt;</arg>
+<arg>${R_PARTNER_ID_NS_6}</arg>
+</arguments>
+<assign>
+<var>${R_IMPORT_HIST_INVENTORY}</var>
+</assign>
+<msg timestamp="20180822 10:09:24.851" level="INFO">${R_IMPORT_HIST_INVENTORY} = https://admindev.acommercedev.com/beehive/frontend/item-master/import-histories/3880</msg>
+<status status="PASS" endtime="20180822 10:09:24.851" starttime="20180822 10:09:24.850"></status>
+</kw>
+<kw name="Drop file and verify import history" library="global_resource_item_master_method">
+<arguments>
+<arg>${R_INVENTORY_LIST}</arg>
+<arg>${R_IMPORT_HIST_INVENTORY}</arg>
+<arg>create_${partner_item_id}.csv</arg>
+<arg>Failed</arg>
+<arg>${R_ERROR_MSG_UI_REQ_FIELD_IS_MISSING}</arg>
+<arg>${R_ERROR_MSG_UI_REQ_FIELD_IS_MISSING}</arg>
+<arg>${R_USERNAME_ADMIN_PORTAL}</arg>
+</arguments>
+<kw name="Login to admin" library="global_resource_portal">
+<arguments>
+<arg>${item_list_path}</arg>
+</arguments>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>open browser</arg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<status status="PASS" endtime="20180822 10:09:24.854" starttime="20180822 10:09:24.854"></status>
+</kw>
+<kw name="Set open browser" library="global_resource_selenium">
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${R_SELENIUM_HUB != None}</arg>
+<arg>Open Browser</arg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<arg>remote_url=${R_SELENIUM_HUB}</arg>
+<arg>desired_capabilities=browserName:chrome</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<arg>remote_url=${R_SELENIUM_HUB}</arg>
+<arg>desired_capabilities=browserName:chrome</arg>
+</arguments>
+<msg timestamp="20180822 10:09:24.859" level="INFO">Opening browser 'chrome' to base url 'https://admindev.acommercedev.com/beehive/frontend/ui-inventory/3880'.</msg>
+<status status="PASS" endtime="20180822 10:09:28.847" starttime="20180822 10:09:24.857"></status>
+</kw>
+<status status="PASS" endtime="20180822 10:09:28.847" starttime="20180822 10:09:24.855"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${R_SELENIUM_HUB == None}</arg>
+<arg>Open Browser</arg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<status status="PASS" endtime="20180822 10:09:28.849" starttime="20180822 10:09:28.848"></status>
+</kw>
+<status status="PASS" endtime="20180822 10:09:28.849" starttime="20180822 10:09:24.854"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180822 10:09:28.993" starttime="20180822 10:09:28.850"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${R_WE_LOGIN_BUTTON}</arg>
+<arg>timeout=30</arg>
+<arg>error=Time out!!!</arg>
+</arguments>
+<status status="PASS" endtime="20180822 10:09:29.020" starttime="20180822 10:09:28.994"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20180822 10:09:29.024" level="INFO">Typing text 'qa_beehive' into text field 'name=username'.</msg>
+<status status="PASS" endtime="20180822 10:09:29.246" starttime="20180822 10:09:29.021"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20180822 10:09:29.247" level="INFO">Typing password into text field 'name=password'.</msg>
+<status status="PASS" endtime="20180822 10:09:29.429" starttime="20180822 10:09:29.247"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${R_WE_LOGIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20180822 10:09:29.429" level="INFO">Clicking button 'xpath=/html/body/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" endtime="20180822 10:09:30.845" starttime="20180822 10:09:29.429"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${R_SLEEP_5_S}</arg>
+</arguments>
+<msg timestamp="20180822 10:09:35.847" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180822 10:09:35.847" starttime="20180822 10:09:30.846"></status>
+</kw>
+<status status="PASS" endtime="20180822 10:09:35.848" starttime="20180822 10:09:24.853"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>${R_WE_INV_ITEM_IMPORT_BUTTON}</arg>
+<arg>${EXECDIR}${/}${R_TEST_DATA_ITEM_GENERATE}${csv_file}</arg>
+</arguments>
+<status status="PASS" endtime="20180822 10:09:35.893" starttime="20180822 10:09:35.848"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${R_SLEEP_15_S}</arg>
+</arguments>
+<msg timestamp="20180822 10:09:50.894" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20180822 10:09:50.895" starttime="20180822 10:09:35.893"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${item_import_hist_path}</arg>
+</arguments>
+<msg timestamp="20180822 10:09:50.896" level="INFO">Opening url 'https://admindev.acommercedev.com/beehive/frontend/item-master/import-histories/3880'</msg>
+<status status="PASS" endtime="20180822 10:09:52.955" starttime="20180822 10:09:50.895"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${R_WE_IMPORT_HIST_ROW_1_COL_1}</arg>
+<arg>Drop File</arg>
+</arguments>
+<msg timestamp="20180822 10:09:52.957" level="INFO">Verifying element '//*[@id="element_list"]/tbody/tr[1]/td[1]/a' contains exact text 'Drop File'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 10:09:54.906" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180822 10:09:54.906" starttime="20180822 10:09:52.984"></status>
+</kw>
+<msg timestamp="20180822 10:09:54.909" level="FAIL">Element with locator '//*[@id="element_list"]/tbody/tr[1]/td[1]/a' not found.</msg>
+<status status="FAIL" endtime="20180822 10:09:54.909" starttime="20180822 10:09:52.956"></status>
+</kw>
+<status status="FAIL" endtime="20180822 10:09:54.910" starttime="20180822 10:09:24.851"></status>
+</kw>
+<kw type="teardown" name="Teardown item master method" library="global_resource_item_master_method">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180822 10:09:55.132" starttime="20180822 10:09:54.912"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${R_SLEEP_1_S}</arg>
+</arguments>
+<msg timestamp="20180822 10:09:56.134" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180822 10:09:56.134" starttime="20180822 10:09:55.133"></status>
+</kw>
+<kw name="Remove File" library="OperatingSystem">
+<doc>Removes a file with the given path.</doc>
+<arguments>
+<arg>${R_TEST_DATA_ITEM_GENERATE}*.*</arg>
+</arguments>
+<msg timestamp="20180822 10:09:56.155" html="yes" level="INFO">Removed file '&lt;a href="file:///Users/nattapol/bh-qa-automation/test_suite/item_master/test_data/generate/create_UI_20180822_100924.csv"&gt;/Users/nattapol/bh-qa-automation/test_suite/item_master/test_data/generate/create_UI_20180822_100924.csv&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180822 10:09:56.156" starttime="20180822 10:09:56.136"></status>
+</kw>
+<status status="PASS" endtime="20180822 10:09:56.156" starttime="20180822 10:09:54.910"></status>
+</kw>
+<status status="FAIL" endtime="20180822 10:09:56.157" critical="yes" starttime="20180822 10:09:24.841">Element with locator '//*[@id="element_list"]/tbody/tr[1]/td[1]/a' not found.</status>
+</test>
+<status status="FAIL" endtime="20180822 10:09:56.161" starttime="20180822 10:09:14.736"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Issue" pass="0">Issue</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180822 10:09:22.385" level="ERROR">Error in file '/Users/nattapol/bh-qa-automation/test_suite/resource/All_global_library.robot': Test library '../../custom_keyword/sale_order/so_library.py' does not exist.</msg>
+<msg timestamp="20180822 10:09:24.786" level="ERROR">Error in file '/Users/nattapol/bh-qa-automation/test_suite/resource/All_global_resource.robot': Resource file 'global_resource_db.robot' does not exist.</msg>
+<msg timestamp="20180822 10:09:24.786" level="ERROR">Error in file '/Users/nattapol/bh-qa-automation/test_suite/resource/All_global_resource.robot': Resource file 'global_resource_goods_received_note_method.robot' does not exist.</msg>
+</errors>
+</robot>

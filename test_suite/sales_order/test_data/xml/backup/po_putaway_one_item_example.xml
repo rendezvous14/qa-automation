@@ -1,0 +1,35 @@
+<message>
+  <control>
+    <message-id>075ffc93-e422-4187-8fe0-2ebc2042febd</message-id>
+  </control>
+  <body>
+    <putawayComplete>
+      <Receipts>
+        <Receipt>
+          <DateTimeStamp>2017-12-09T17:26:38.393</DateTimeStamp>
+          <ReceiptId>PO_3916_20171218_094828</ReceiptId>
+          <ReceiptIdType>PO</ReceiptIdType>
+          <Company>3916-bs2-th</Company>
+          <Warehouse>TH-ACOM-RM3</Warehouse>
+          <ReceiptDate>2017-11-29T17:26:38.393</ReceiptDate>
+          <ReceiptContainers>
+            <ReceiptContainer>
+              <ExpDate>2018-12-31T00:00:00Z</ExpDate>
+              <Lot>PO_3916_20171218_094828</Lot>
+              <Qty>100.00000</Qty>
+              <ToLocationWorkZone>W-General</ToLocationWorkZone>
+              <ReceiptDetail>
+                <ErpOrderLineNum>1.00000</ErpOrderLineNum>
+                <PurchaseOrderLineNum>1.00000</PurchaseOrderLineNum>
+                <PurchaseOrderId>NKRFAB6J7O71UXK47Z1O1ZWM6</PurchaseOrderId>
+                <SKU>
+                  <Item>4DUL4JV9VJQJ2ZMT8T7T1PBD2</Item>
+                </SKU>
+              </ReceiptDetail>
+            </ReceiptContainer>
+          </ReceiptContainers>
+        </Receipt>
+      </Receipts>
+    </putawayComplete>
+  </body>
+</message>

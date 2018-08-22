@@ -1,0 +1,30 @@
+<message>
+    <control>
+        <message-id>79e61cba-abb8-4089-8e11-372b504b370a</message-id>
+    </control>
+    <body>
+        <fulfillmentConfirm>
+            <Shipments>
+                <Shipment>
+                    <DateTimeStamp>2016-12-06T07:08:45.707</DateTimeStamp>
+                    <ActualShipDateTime>2016-12-06T07:08:44.923</ActualShipDateTime>
+                    <ShipmentId>VAR_SHIPMENT_ID</ShipmentId>
+                    <TotalContainers>1</TotalContainers>
+                    <Warehouse>VAR_WAREHOUSE</Warehouse>
+                    <Details>
+                        <ShipmentDetail>
+                            <ErpOrderLineNum>1.00000</ErpOrderLineNum>
+                            <SKU>
+                                <Company>VAR_COMPANY</Company>
+                                <Item>VAR_ITEM_KEY_1</Item>
+                                <Lot>VAR_LOT_ID_1</Lot>
+                                <Quantity>1.00000</Quantity>
+                                <FromLocationWorkZone>VAR_FROM_LOCATION_ZONE_1</FromLocationWorkZone>
+                            </SKU>
+                        </ShipmentDetail>
+                    </Details>
+                </Shipment>
+            </Shipments>
+        </fulfillmentConfirm>
+    </body>
+</message>

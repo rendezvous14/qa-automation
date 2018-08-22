@@ -1,0 +1,33 @@
+<message>
+
+  <control>
+
+    <message-id>b8d71fdf-ecdd-4761-b165-b53bff8fc02e</message-id>
+
+  </control>
+
+  <body>
+
+    <expiryChange>
+
+      <DateTimeStamp>2016-12-02T02:54:56.130</DateTimeStamp>
+
+      <AfterExpDate>VAR_EXPIRY_CHANGE</AfterExpDate>
+
+      <Company>xxx-3540</Company>
+
+      <Item>VAR_ITEM_KEY</Item>
+
+      <Lot>VAR_LOT_ID</Lot>
+
+      <ReferenceType />
+
+      <UserName>Automation</UserName>
+
+      <Warehouse>TH-ACOM-RM3</Warehouse>
+
+    </expiryChange>
+
+  </body>
+
+</message>

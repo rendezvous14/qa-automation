@@ -1,0 +1,13 @@
+pymongo
+psycopg2
+pika
+paramiko
+requests
+pytest-runner
+robotframework
+robotframework-sshLibrary
+robotframework-seleniumlibrary
+robotframework-httplibrary
+robotframework-appiumlibrary
+robotframework-jsonlibrary
+robotframework-mongodblibrary

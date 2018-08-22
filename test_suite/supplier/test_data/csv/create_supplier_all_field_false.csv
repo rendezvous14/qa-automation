@@ -1,0 +1,2 @@
+supplierName,contactName,addressee,address1,address2,subDistrict,district,city,province,postalCode,country,phone,email,currency,website,defaultSupplier
+VAR_SUPPLIER_NAME,VAR_CONTACT_NAME,VAR_ADDRESSEE,VAR_ADDR1,VAR_ADDR2,VAR_SUB_DISTRICT,VAR_DISTRICT,VAR_CITY,VAR_PROVINCE,VAR_POSTAL,VAR_COUNTRY,VAR_PHONE,VAR_EMAIL,VAR_CURRENCY,VAR_WEBSITE,false

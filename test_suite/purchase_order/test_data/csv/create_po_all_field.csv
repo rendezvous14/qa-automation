@@ -1,0 +1,2 @@
+partnerPurchaseOrderId,partnerItemId,unitPrice,qty,purchaseOrderDate,supplierName,taxRate,expectedReceiveDate
+VAR_PARTNER_PO_ID_1,VAR_PARTNER_ITEM_ID_1,VAR_UNIT_PRICE_1,VAR_QTY_1,VAR_PO_DATE_1,VAR_SUPPLIER_NAME_1,VAR_TAX_RATE_1,VAR_EXPECTED_RECEIVE_DATE_1

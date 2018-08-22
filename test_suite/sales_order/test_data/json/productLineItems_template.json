@@ -1,0 +1,15 @@
+{
+  "lineNumber": VAR_LINE_NUNBER,
+  "partnerId": "VAR_PARTNER_ID",
+  "productId": "VAR_PARTNER_ITEM_ID",
+  "productTitle": "VAR_PARTNER_ITEM_ID",
+  "qty": "VAR_PRODUCT_QTY",
+  "grossAmount": VAR_GROSS_AMOUNT,
+  "items": [
+    {
+      "partnerItemId": "VAR_PARTNER_ITEM_ID",
+      "partnerId": "VAR_PARTNER_ID",
+      "qty": "VAR_ITEM_QTY"
+    }
+  ]
+}

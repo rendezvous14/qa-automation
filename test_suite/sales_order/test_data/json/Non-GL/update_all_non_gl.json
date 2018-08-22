@@ -1,0 +1,42 @@
+{
+  "shippingType": "VAR_SHIPPING_TYPE",
+  "orderShipmentInfo": {
+    "addressee": "VAR_ORDER_SHIPMENT_INFO_ADDRESSEE",
+    "address1": "VAR_ORDER_SHIPMENT_INFO_ADDRESS1",
+    "address2": "VAR_ORDER_SHIPMENT_INFO_ADDRESS2",
+    "subDistrict": "VAR_ORDER_SHIPMENT_INFO_SUBDISTICT",
+    "district": "VAR_ORDER_SHIPMENT_INFO_DISTICT",
+    "city": "VAR_ORDER_SHIPMENT_INFO_CITY",
+    "province": "VAR_ORDER_SHIPMENT_INFO_PROVINCE",
+    "postalCode": "VAR_ORDER_SHIPMENT_INFO_POSTALCODE",
+    "country": "VAR_ORDER_SHIPMENT_INFO_COUNTRY",
+    "phone": "VAR_ORDER_SHIPMENT_INFO_PHONE",
+    "email": "VAR_ORDER_SHIPMENT_INFO_EMAIL"
+  },
+  "customerInfo": {
+    "addressee": "VAR_CUSTOMER_INFO_ADDRESSEE",
+    "address1": "VAR_CUSTOMER_INFO_ADDRESS1",
+    "address2": "VAR_CUSTOMER_INFO_ADDRESS2",
+    "subDistrict": "VAR_CUSTOMER_INFO_SUBDISTICT",
+    "district": "VAR_CUSTOMER_INFO_DISTICT",
+    "city": "VAR_CUSTOMER_INFO_CITY",
+    "province": "VAR_CUSTOMER_INFO_PROVINCE",
+    "postalCode": "VAR_CUSTOMER_INFO_POSTALCODE",
+    "country": "VAR_CUSTOMER_INFO_COUNTRY",
+    "phone": "VAR_CUSTOMER_INFO_PHONE",
+    "email": "VAR_CUSTOMER_INFO_EMAIL"
+  },
+  "orderBillingInfo": {
+    "addressee": "VAR_ORDER_BILLING_INFO_ADDRESSEE",
+    "address1": "VAR_ORDER_BILLING_INFO_ADDRESS1",
+    "address2": "VAR_ORDER_BILLING_INFO_ADDRESS2",
+    "subDistrict": "VAR_ORDER_BILLING_INFO_SUBDISTICT",
+    "district": "VAR_ORDER_BILLING_INFO_DISTICT",
+    "city": "VAR_ORDER_BILLING_INFO_CITY",
+    "province": "VAR_ORDER_BILLING_INFO_PROVINCE",
+    "postalCode": "VAR_ORDER_BILLING_INFO_POSTALCODE",
+    "country": "VAR_ORDER_BILLING_INFO_COUNTRY",
+    "phone": "VAR_ORDER_BILLING_INFO_PHONE",
+    "email": "VAR_ORDER_BILLING_INFO_EMAIL"
+  }
+}

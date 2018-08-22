@@ -1,0 +1,18 @@
+<message>
+    <control>
+        <message-id>197e1ad9-02a4-4105-9392-dd66f4232209</message-id>
+    </control>
+    <body>
+        <fulfillmentAllocated>
+            <Shipments>
+                <Shipment>
+                    <Warehouse>VAR_WAREHOUSE</Warehouse>
+                    <ShipmentId>VAR_SHIPMENT_ID</ShipmentId>
+                    <Status>Picking Pending</Status>
+                    <OrderType>Fulfillment</OrderType>
+                    <DateTimeStamp>VAR_DATETIME</DateTimeStamp>
+                </Shipment>
+            </Shipments>
+        </fulfillmentAllocated>
+    </body>
+</message>

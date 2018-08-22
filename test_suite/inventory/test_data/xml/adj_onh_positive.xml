@@ -1,0 +1,26 @@
+<message>
+  <control>
+    <message-id>d0f5cbfe-6af0-4ac6-a9e0-6fdf03ffa92b</message-id>
+  </control>
+  <body>
+    <onHandAdjust>
+      <DateTimeStamp>VAR_CURRENT_DATE</DateTimeStamp>
+      <Warehouse>VAR_WAREHOUSE</Warehouse>
+      <Company>VAR_COMPANY</Company>
+      <Item>VAR_ITEM_KEY</Item>
+      <OnHandAdjustQuantity>5</OnHandAdjustQuantity>
+      <AvailableAdjustQuantity>5</AvailableAdjustQuantity>
+      <ReferenceType>Adjust +(Test)</ReferenceType>
+      <LocZone>VAR_LOCATION_ZONE</LocZone>
+      <SerialNumbers>
+        <SerialNumber>XYZ1001_VAR_SNDATETIME</SerialNumber>
+        <SerialNumber>XYZ1002_VAR_SNDATETIME</SerialNumber>
+        <SerialNumber>XYZ1003_VAR_SNDATETIME</SerialNumber>
+        <SerialNumber>XYZ1004_VAR_SNDATETIME</SerialNumber>
+        <SerialNumber>XYZ1005_VAR_SNDATETIME</SerialNumber>
+      </SerialNumbers>
+      <Lot>VAR_LOT_ID</Lot>
+      <UserName>Automation</UserName>
+    </onHandAdjust>
+  </body>
+</message>

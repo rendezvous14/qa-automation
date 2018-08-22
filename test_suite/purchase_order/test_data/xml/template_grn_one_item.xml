@@ -1,0 +1,38 @@
+<message>
+    <control>
+        <message-id>552bf8e8-c355-40c6-83fa-0f9772a2a03c</message-id>
+    </control>
+    <body>
+        <goodsReceipt>
+            <Receipts>
+                <Receipt>
+                    <DateTimeStamp>VAR_CURRENT_DATE</DateTimeStamp>
+                    <ReceiptId>VAR_RECEIPT_ID</ReceiptId>
+                    <ReceiptIdType>PO</ReceiptIdType>
+                    <Company>VAR_COMPANY</Company>
+                    <Warehouse>VAR_WAREHOUSE</Warehouse>
+                    <ReceiptDate>VAR_RECEIPT_DATE</ReceiptDate>
+                    <ReceiptDetails>
+                        <ReceiptDetail>
+                            <ErpOrderLineNum>1.00000</ErpOrderLineNum>
+                            <PurchaseOrderLineNum>1.00000</PurchaseOrderLineNum>
+                            <PurchaseOrderId>VAR_PO_ID_KEY</PurchaseOrderId>
+                            <SKU>
+                                <Item>VAR_ITEM_KEY</Item>
+                            </SKU>
+                            <OpenQty>VAR_OPEN_QTY</OpenQty>
+                            <ReceiptContainers>
+                                <ReceiptContainer>
+                                    <ExpDate>VAR_EXPIRE_DATE</ExpDate>
+                                    <Lot>VAR_LOT</Lot>
+                                    <Qty>VAR_QTY</Qty>
+                                    <SerialNumbers />
+                                </ReceiptContainer>
+                            </ReceiptContainers>
+                        </ReceiptDetail>
+                    </ReceiptDetails>
+                </Receipt>
+            </Receipts>
+        </goodsReceipt>
+    </body>
+</message>

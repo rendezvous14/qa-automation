@@ -1,0 +1,55 @@
+<message>
+    <control>
+        <message-id>4de4a582-6a4b-4611-90b4-6338189bb4f4</message-id>
+    </control>
+    <body>
+        <goodsReceipt>
+            <Receipts>
+                <Receipt>
+                    <DateTimeStamp>VAR_CURRENT_DATE</DateTimeStamp>
+                    <ReceiptId>VAR_RECEIPT_ID</ReceiptId>
+                    <ReceiptIdType>PO</ReceiptIdType>
+                    <Company>VAR_COMPANY</Company>
+                    <Warehouse>VAR_WAREHOUSE</Warehouse>
+                    <ReceiptDate>VAR_RECEIPT_DATE</ReceiptDate>
+                    <ReceiptDetails>
+                        <ReceiptDetail>
+                            <ErpOrderLineNum>1.00000</ErpOrderLineNum>
+                            <PurchaseOrderLineNum>1.00000</PurchaseOrderLineNum>
+                            <PurchaseOrderId>VAR_PO_ID_KEY</PurchaseOrderId>
+                            <SKU>
+                                <Item>VAR_ITEM_KEY_1</Item>
+                            </SKU>
+                            <OpenQty>VAR_OPEN_QTY_1</OpenQty>
+                            <ReceiptContainers>
+                                <ReceiptContainer>
+                                    <ExpDate>VAR_ITEM_1_EXPIRE_DATE_1</ExpDate>
+                                    <Lot>VAR_ITEM_1_LOT_1</Lot>
+                                    <Qty>VAR_ITEM_1_QTY_1</Qty>
+                                    <SerialNumbers />
+                                </ReceiptContainer>
+                            </ReceiptContainers>
+                        </ReceiptDetail>
+                        <ReceiptDetail>
+                            <ErpOrderLineNum>2.00000</ErpOrderLineNum>
+                            <PurchaseOrderLineNum>2.00000</PurchaseOrderLineNum>
+                            <PurchaseOrderId>VAR_PO_ID_KEY</PurchaseOrderId>
+                            <SKU>
+                                <Item>VAR_ITEM_KEY_2</Item>
+                            </SKU>
+                            <OpenQty>VAR_OPEN_QTY_2</OpenQty>
+                            <ReceiptContainers>
+                                <ReceiptContainer>
+                                    <ExpDate>VAR_ITEM_2_EXPIRE_DATE_1</ExpDate>
+                                    <Lot>VAR_ITEM_2_LOT_1</Lot>
+                                    <Qty>VAR_ITEM_2_QTY_1</Qty>
+                                    <SerialNumbers />
+                                </ReceiptContainer>
+                            </ReceiptContainers>
+                        </ReceiptDetail>
+                    </ReceiptDetails>
+                </Receipt>
+            </Receipts>
+        </goodsReceipt>
+    </body>
+</message>
