@@ -1,3 +1,6 @@
 output.xml
 log.html
 report.html
+*.png
+stderr.txt
+stdout.txt

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180824 01:02:41.800" generator="Robot 3.0.1 (Python 2.7.13 on darwin)">
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev" id="s1" name="Admindev">
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC01.robot" id="s1-s1" name="TC01">
+<test id="s1-s1-t1" name="1. Verify User role = ADM can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.052" starttime="20180824 01:02:42.052"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.053" starttime="20180824 01:02:42.052"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.053" starttime="20180824 01:02:42.053"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.053" starttime="20180824 01:02:42.053"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.053" critical="yes" starttime="20180824 01:02:42.052"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.054" starttime="20180824 01:02:41.824"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC02.robot" id="s1-s2" name="TC02">
+<test id="s1-s2-t1" name="2. Verify User role = SMGR can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.060" starttime="20180824 01:02:42.060"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.060" starttime="20180824 01:02:42.060"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.060" starttime="20180824 01:02:42.060"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.060" critical="yes" starttime="20180824 01:02:42.059"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.061" starttime="20180824 01:02:42.055"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC03.robot" id="s1-s3" name="TC03">
+<test id="s1-s3-t1" name="3. Verify User role = PURC can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.067" starttime="20180824 01:02:42.067"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.067" starttime="20180824 01:02:42.067"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.067" starttime="20180824 01:02:42.067"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.067" critical="yes" starttime="20180824 01:02:42.066"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.068" starttime="20180824 01:02:42.062"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC04.robot" id="s1-s4" name="TC04">
+<test id="s1-s4-t1" name="4. Verify User role = MERC can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.074" starttime="20180824 01:02:42.074"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.075" starttime="20180824 01:02:42.074"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.075" critical="yes" starttime="20180824 01:02:42.073"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.076" starttime="20180824 01:02:42.069"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC05.robot" id="s1-s5" name="TC05">
+<test id="s1-s5-t1" name="5. Verify User role = CS can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.081" starttime="20180824 01:02:42.081"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.082" starttime="20180824 01:02:42.082"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.082" starttime="20180824 01:02:42.082"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.082" critical="yes" starttime="20180824 01:02:42.081"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.082" starttime="20180824 01:02:42.076"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC06.robot" id="s1-s6" name="TC06">
+<test id="s1-s6-t1" name="6. Verify User role = INB can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.089" starttime="20180824 01:02:42.088"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.089" starttime="20180824 01:02:42.089"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.089" starttime="20180824 01:02:42.089"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.089" critical="yes" starttime="20180824 01:02:42.088"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.090" starttime="20180824 01:02:42.083"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC07.robot" id="s1-s7" name="TC07">
+<test id="s1-s7-t1" name="7. Verify User role = OUTB can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.096" starttime="20180824 01:02:42.096"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.096" starttime="20180824 01:02:42.096"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.096" starttime="20180824 01:02:42.096"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.096" critical="yes" starttime="20180824 01:02:42.095"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.097" starttime="20180824 01:02:42.090"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC08.robot" id="s1-s8" name="TC08">
+<test id="s1-s8-t1" name="8. Verify User role = SHP can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.103" starttime="20180824 01:02:42.103"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.103" starttime="20180824 01:02:42.103"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.103" starttime="20180824 01:02:42.103"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.103" critical="yes" starttime="20180824 01:02:42.102"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.104" starttime="20180824 01:02:42.098"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC09.robot" id="s1-s9" name="TC09">
+<test id="s1-s9-t1" name="9. Verify User role = SUP can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.109" starttime="20180824 01:02:42.109"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.110" starttime="20180824 01:02:42.110"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.110" starttime="20180824 01:02:42.110"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.110" critical="yes" starttime="20180824 01:02:42.109"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.110" starttime="20180824 01:02:42.104"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC10.robot" id="s1-s10" name="TC10">
+<test id="s1-s10-t1" name="10. Verify User role = VR can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.117" starttime="20180824 01:02:42.117"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.117" starttime="20180824 01:02:42.117"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.117" starttime="20180824 01:02:42.117"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.117" critical="yes" starttime="20180824 01:02:42.116"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.118" starttime="20180824 01:02:42.111"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC11.robot" id="s1-s11" name="TC11">
+<test id="s1-s11-t1" name="11. Verify User role = RVR can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.124" starttime="20180824 01:02:42.124"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.124" starttime="20180824 01:02:42.124"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.124" starttime="20180824 01:02:42.124"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.125" starttime="20180824 01:02:42.124"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.125" critical="yes" starttime="20180824 01:02:42.123"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.125" starttime="20180824 01:02:42.119"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC12.robot" id="s1-s12" name="TC12">
+<test id="s1-s12-t1" name="12. Verify User role = ROUT can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.131" starttime="20180824 01:02:42.131"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.132" starttime="20180824 01:02:42.131"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.132" starttime="20180824 01:02:42.131"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.132" critical="yes" starttime="20180824 01:02:42.130"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.132" starttime="20180824 01:02:42.126"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC13.robot" id="s1-s13" name="TC13">
+<test id="s1-s13-t1" name="13. Verify User role = MKT can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.140" starttime="20180824 01:02:42.139"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.140" starttime="20180824 01:02:42.140"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.140" starttime="20180824 01:02:42.140"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.140" critical="yes" starttime="20180824 01:02:42.139"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.141" starttime="20180824 01:02:42.133"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC14.robot" id="s1-s14" name="TC14">
+<test id="s1-s14-t1" name="14. Verify User role = FNZ can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.148" starttime="20180824 01:02:42.148"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.148" starttime="20180824 01:02:42.148"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.148" starttime="20180824 01:02:42.148"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.148" starttime="20180824 01:02:42.148"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.148" critical="yes" starttime="20180824 01:02:42.147"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.149" starttime="20180824 01:02:42.141"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC15.robot" id="s1-s15" name="TC15">
+<test id="s1-s15-t1" name="15. Verify User role = HR can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.155" starttime="20180824 01:02:42.154"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.155" starttime="20180824 01:02:42.155"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.155" starttime="20180824 01:02:42.155"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.155" critical="yes" starttime="20180824 01:02:42.154"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.156" starttime="20180824 01:02:42.150"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC16.robot" id="s1-s16" name="TC16">
+<test id="s1-s16-t1" name="16. Verify User role = SALE can access Reporting Services successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.162" starttime="20180824 01:02:42.162"></status>
+</kw>
+<kw type="teardown" name="Logout Reporting Service and close browser" library="resource_idp_user">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.163" starttime="20180824 01:02:42.163"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.163" starttime="20180824 01:02:42.163"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.163" critical="yes" starttime="20180824 01:02:42.162"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.164" starttime="20180824 01:02:42.157"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC17.robot" id="s1-s17" name="TC17">
+<test id="s1-s17-t1" name="17. Verify User role = PADM cannot access Reporting Services">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.171" starttime="20180824 01:02:42.171"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.171" starttime="20180824 01:02:42.171"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.172" critical="yes" starttime="20180824 01:02:42.170"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.172" starttime="20180824 01:02:42.165"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC18.robot" id="s1-s18" name="TC18">
+<test id="s1-s18-t1" name="18. Verify User role = POPS cannot access Reporting Services">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.178" starttime="20180824 01:02:42.178"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.178" starttime="20180824 01:02:42.178"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.179" critical="yes" starttime="20180824 01:02:42.177"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.180" starttime="20180824 01:02:42.173"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC19.robot" id="s1-s19" name="TC19">
+<test id="s1-s19-t1" name="19. Verify User role = PSHP cannot access Reporting Services">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.187" starttime="20180824 01:02:42.187"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.188" starttime="20180824 01:02:42.188"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.188" critical="yes" starttime="20180824 01:02:42.187"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.188" starttime="20180824 01:02:42.182"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC20.robot" id="s1-s20" name="TC20">
+<test id="s1-s20-t1" name="20. Verify User role = PDC cannot access Reporting Services">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.195" starttime="20180824 01:02:42.195"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.195" starttime="20180824 01:02:42.195"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.195" starttime="20180824 01:02:42.195"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.195" critical="yes" starttime="20180824 01:02:42.194"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.196" starttime="20180824 01:02:42.189"></status>
+</suite>
+<suite source="/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC21.robot" id="s1-s21" name="TC21">
+<test id="s1-s21-t1" name="21. Verify User role = CTVR cannot access Reporting Services">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.204" starttime="20180824 01:02:42.203"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.204" starttime="20180824 01:02:42.204"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180824 01:02:42.204" starttime="20180824 01:02:42.204"></status>
+</kw>
+<status status="PASS" endtime="20180824 01:02:42.204" critical="yes" starttime="20180824 01:02:42.202"></status>
+</test>
+<doc>Verify the reporting services integrated with platform successfully
+Verify IDP User role can access Reporting Services
+platform = admindev</doc>
+<status status="PASS" endtime="20180824 01:02:42.205" starttime="20180824 01:02:42.197"></status>
+</suite>
+<status status="PASS" endtime="20180824 01:02:42.206" starttime="20180824 01:02:41.802"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="21">Critical Tests</stat>
+<stat fail="0" pass="21">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Admindev" pass="21">Admindev</stat>
+<stat fail="0" id="s1-s1" name="TC01" pass="1">Admindev.TC01</stat>
+<stat fail="0" id="s1-s2" name="TC02" pass="1">Admindev.TC02</stat>
+<stat fail="0" id="s1-s3" name="TC03" pass="1">Admindev.TC03</stat>
+<stat fail="0" id="s1-s4" name="TC04" pass="1">Admindev.TC04</stat>
+<stat fail="0" id="s1-s5" name="TC05" pass="1">Admindev.TC05</stat>
+<stat fail="0" id="s1-s6" name="TC06" pass="1">Admindev.TC06</stat>
+<stat fail="0" id="s1-s7" name="TC07" pass="1">Admindev.TC07</stat>
+<stat fail="0" id="s1-s8" name="TC08" pass="1">Admindev.TC08</stat>
+<stat fail="0" id="s1-s9" name="TC09" pass="1">Admindev.TC09</stat>
+<stat fail="0" id="s1-s10" name="TC10" pass="1">Admindev.TC10</stat>
+<stat fail="0" id="s1-s11" name="TC11" pass="1">Admindev.TC11</stat>
+<stat fail="0" id="s1-s12" name="TC12" pass="1">Admindev.TC12</stat>
+<stat fail="0" id="s1-s13" name="TC13" pass="1">Admindev.TC13</stat>
+<stat fail="0" id="s1-s14" name="TC14" pass="1">Admindev.TC14</stat>
+<stat fail="0" id="s1-s15" name="TC15" pass="1">Admindev.TC15</stat>
+<stat fail="0" id="s1-s16" name="TC16" pass="1">Admindev.TC16</stat>
+<stat fail="0" id="s1-s17" name="TC17" pass="1">Admindev.TC17</stat>
+<stat fail="0" id="s1-s18" name="TC18" pass="1">Admindev.TC18</stat>
+<stat fail="0" id="s1-s19" name="TC19" pass="1">Admindev.TC19</stat>
+<stat fail="0" id="s1-s20" name="TC20" pass="1">Admindev.TC20</stat>
+<stat fail="0" id="s1-s21" name="TC21" pass="1">Admindev.TC21</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180824 01:02:41.772" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC01.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.773" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC02.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.774" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC03.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.775" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC04.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.776" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC05.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.777" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC06.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.778" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC07.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.779" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC08.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.780" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC09.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.782" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC10.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.783" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC11.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.784" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC12.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.785" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC13.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.786" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC14.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.787" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC15.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.788" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC16.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.789" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC17.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.790" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC18.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.791" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC19.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.792" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC20.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.793" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/admindev/TC21.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.826" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/resource/resource_idp_user.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180824 01:02:41.832" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.057" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.064" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.071" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.079" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.086" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.093" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.100" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.107" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.114" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.121" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.128" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.137" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.144" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.152" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.160" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.168" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.175" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.185" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.192" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180824 01:02:42.199" level="ERROR">Error in file '/Users/nattapol/Documents/Coding/qa-automation/test_suite/ui/REPORTING_SERVICES/variables/variables_dev_platform.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+</errors>
+</robot>

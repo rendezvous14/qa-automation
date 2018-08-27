@@ -1,0 +1,2 @@
+supplierName,contactName,addressee,address1,address2,subDistrict,district,city,province,postalCode,country,phone,email,currency,website,defaultSupplier
+ATS_test,AUTOMATION_UPDATE,addressee,address1,address2,subDistrict,district,city,province,postalCode,TH,123456789,email@acommerce.asia,SGD,www.website.com,TRUE

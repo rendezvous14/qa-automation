@@ -1,0 +1,3 @@
+partnerPurchaseOrderId,partnerItemId,qty,unitPrice
+PO_TEST_001,TEST_ITEM_0001,100,10
+PO_TEST_002,TEST_ITEM_0002,100,10
